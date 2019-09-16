@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="../plugins/layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../css/login/login.css">
+    <title>登录</title>
+</head>
+<body>
+    <div ms-controller='root'>
+        <header>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <ul class='clearfix'>
+                        <li class='pull-left logo ml80'><img src="../images/logo.png" alt="logo"></li>
+                        <li class='pull-left ml70'>欢迎登录纵运服务平台</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 text-right">
+                    <a href="javascript:;">返回首页</a>
+                </div>
+            </div>
+        </header>
+        <div class="login">
+            <div class='row'>
+                <div class='col-md-6 col-sm-6 col-md-offset-6 col-sm-offset-6'>
+                    <div class='loginBox'>
+                        <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                            <ul class="layui-tab-title">
+                                <li class="layui-this">司机</li>
+                                <li>合作商家</li>
+                                <li>区域代理</li>
+                            </ul>
+                            <div class="layui-tab-content">
+                                <div class="layui-tab-item layui-show">
+                                    <div class='showPwd'>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">账号:</label>
+                                            <div class="layui-input-block">
+                                                <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入账号"
+                                                    class="layui-input">
+                                            </div>
+                                        </div>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">密码:</label>
+                                            <div class="layui-input-block">
+                                                <input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                                            </div>
+                                        </div>
+                                        <button type="button" class="layui-btn layui-btn-primary">登<span class='ml60'>录</span></button>
+                                        <div class='row font14 mt30'>
+                                            <div class='col-sm-6 pl60'><a class='changeCodeLogin'  ms-on-click='@changeCodeShow(".layui-tab-content .layui-tab-item:first-child .showPwd",".layui-tab-content .layui-tab-item:first-child .showCode")' href='javascript:;'>切换验证码登录</a></div>
+                                            <div class='col-sm-6 text-right pr34'><a href='javascript:;'>忘记密码</a></div>
+                                        </div>
+                                    </div>
+                                    <div class='showCode dis_none'>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">账号:</label>
+                                            <div class="layui-input-block">
+                                                <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入账号" class="layui-input">
+                                            </div>
+                                        </div>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">验证码:</label>
+                                            <div class="layui-input-block clearfix">
+                                                <input type="text" name="text"  placeholder="请输入验证码" autocomplete="off" class="layui-input checkCode pull-left">
+                                                <button type="button" id="layui-btn-Code" class="layui-btn-Code pull-left" ms-on-click='@getCheckCode'>获取验证码</button>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="layui-btn layui-btn-primary">登<span class='ml60'>录</span></button>
+                                        <div class='row font14 mt30'>
+                                            <div class='col-sm-6 pl60'><a class='changePwdLogin' ms-on-click='@changePwdShow(".layui-tab-content .layui-tab-item:first-child .showPwd",".layui-tab-content .layui-tab-item:first-child .showCode")' href='javascript:;'>切换密码登录</a></div>
+                                            <div class='col-sm-6 text-right pr34'><a href='javascript:;'>忘记密码</a></div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="layui-tab-item">
+                                    <div class='showPwd'>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">账号:</label>
+                                            <div class="layui-input-block">
+                                                <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入账号"
+                                                    class="layui-input">
+                                            </div>
+                                        </div>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">密码:</label>
+                                            <div class="layui-input-block">
+                                                <input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                                            </div>
+                                        </div>
+                                        <button type="button" class="layui-btn layui-btn-primary">登<span class='ml60'>录</span></button>
+                                        <div class='row font14 mt30'>
+                                            <div class='col-sm-6 pl60'><a class='changeCodeLogin' ms-on-click='@changeCodeShow(".layui-tab-content .layui-tab-item:nth-child(2) .showPwd",".layui-tab-content .layui-tab-item:nth-child(2) .showCode")'
+                                                    href='javascript:;'>切换验证码登录</a></div>
+                                            <div class='col-sm-6 text-right pr34'><a href='javascript:;'>忘记密码</a></div>
+                                        </div>
+                                    </div>
+                                    <div class='showCode dis_none'>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">账号:</label>
+                                            <div class="layui-input-block">
+                                                <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入账号"
+                                                    class="layui-input">
+                                            </div>
+                                        </div>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">验证码:</label>
+                                            <div class="layui-input-block clearfix">
+                                                <input type="text" name="text" placeholder="请输入验证码" autocomplete="off"
+                                                    class="layui-input checkCode pull-left">
+                                                <button type="button" id="layui-btn-Code" class="layui-btn-Code pull-left"
+                                                    ms-on-click='@getCheckCode'>获取验证码</button>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="layui-btn layui-btn-primary">登<span class='ml60'>录</span></button>
+                                        <div class='row font14 mt30'>
+                                            <div class='col-sm-6 pl60'><a class='changePwdLogin' ms-on-click='@changePwdShow(".layui-tab-content .layui-tab-item:nth-child(2) .showPwd",".layui-tab-content .layui-tab-item:nth-child(2) .showCode")' href='javascript:;'>切换密码登录</a>
+                                            </div>
+                                            <div class='col-sm-6 text-right pr34'><a href='javascript:;'>忘记密码</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-tab-item">
+                                    <div class='showPwd'>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">账号:</label>
+                                            <div class="layui-input-block">
+                                                <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入账号"
+                                                    class="layui-input">
+                                            </div>
+                                        </div>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">密码:</label>
+                                            <div class="layui-input-block">
+                                                <input type="password" name="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                                            </div>
+                                        </div>
+                                        <button type="button" class="layui-btn layui-btn-primary">登<span class='ml60'>录</span></button>
+                                        <div class='row font14 mt30'>
+                                            <div class='col-sm-6 pl50'><a class='changeCodeLogin'  ms-on-click='@changeCodeShow(".layui-tab-content .layui-tab-item:last-child .showPwd",".layui-tab-content .layui-tab-item:last-child .showCode")' href='javascript:;'>切换验证码登录</a></div>
+                                            <div class='col-sm-6 text-right pr62'><a href='javascript:;'>忘记密码</a></div>
+                                        </div>
+                                    </div>
+                                    <div class='showCode dis_none'>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">账号:</label>
+                                            <div class="layui-input-block">
+                                                <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入账号" class="layui-input">
+                                            </div>
+                                        </div>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">验证码:</label>
+                                            <div class="layui-input-block clearfix">
+                                                <input type="text" name="text"  placeholder="请输入验证码" autocomplete="off" class="layui-input checkCode pull-left">
+                                                <button type="button" id="layui-btn-Code" class="layui-btn-Code pull-left" ms-on-click='@getCheckCode'>获取验证码</button>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="layui-btn layui-btn-primary">登<span class='ml60'>录</span></button>
+                                        <div class='row font14 mt30'>
+                                            <div class='col-sm-6 pl50'><a class='changePwdLogin' ms-on-click='@changePwdShow(".layui-tab-content .layui-tab-item:last-child .showPwd",".layui-tab-content .layui-tab-item:last-child .showCode")' href='javascript:;'>切换密码登录</a></div>
+                                            <div class='col-sm-6 text-right pr62'><a href='javascript:;'>忘记密码</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='tips bg-orange font14'>用户注册请下载APP申请</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class='row'>
+                <div class='col-md-6 col-sm-6'>
+                    <ul class="clearfix  footerBar">
+                        <li><a href="javascript:;">关于我们</a></li>
+                        <li><a href="javascript:;">法律声明</a></li>
+                        <li><a href="javascript:;">意见反馈</a></li>
+                    </ul>
+                    <div class='footerBar font14'>
+                        <p>经营许可证编号<span>:</span>京ICP证080575号/京ICO背09080840号</p>
+                        <p>京公安网1101052035781号</p>
+                    </div>
+                </div>
+                <div class='col-md-6 col-sm-6 clearfix qrCode'>
+                    <ul class='pull-left'>
+                        <li><img src="../images/qrCode.png" alt=""></li>
+                        <li>iPhone客户端</li>
+                    </ul>
+                    <ul  class='pull-left ml80'>
+                        <li><img src="../images/qrCode.png" alt=""></li>
+                        <li>Android客户端</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src='../plugins/jquery/jquery.min.js'></script>
+    <script src='../plugins/layui/dist/layui.js'></script>
+    <script src='../plugins/avalon/avalon.min.js'></script>
+    <script src='../js/data/api.js'></script>
+    <script src='../js/data/return_data.js'></script>
+    <script src='../js/login.js'></script>
+    <script>
+        layui.use('element', function () {
+            var element = layui.element;
+        });
+    </script>
+</body>
+</html>

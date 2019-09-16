@@ -1,0 +1,330 @@
+// 轻卡等分类系列
+.kinds{
+    margin-top:28px;
+    padding: 0px 0px 0px 35px;
+    ul{
+        width:94px;
+        text-align:center;
+        font-size:16px;
+        float:left;
+        margin-right:108px;
+        &:last-child{
+            margin-right:0px;
+        }
+    }
+}
+// 加盟广告图
+.ads{
+    margin-top:35px;
+}
+// 最新新闻列表
+.news_list ul{
+    li{
+        float:left;
+        cursor: pointer;
+        .circle-orange{
+            display: inline-block;
+            width:6px;
+            height:6px;
+            border-radius:6px;
+            background-color:#f57619;
+        }
+        &>a:hover{
+            color:#f57619;
+        }
+        &:last-child{
+            color:#666;
+        }
+    }
+}
+.news_title{
+    color:#333;
+}
+// 查看更多
+.btn-more{
+    color:#999;
+}
+// 热门品牌
+.news_brands{
+    ul{
+        li{
+            float:left;
+        }
+    }
+}
+// 热门车系
+.hotCarSeries{
+    margin-top:65px;
+}
+.img_carSeries,
+.img_carSeries_small {
+    position: relative;
+}
+.info_carSeries{
+    width:410px;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    background-color:rgba(0, 0, 0, 0.3);
+    padding-left:20px;
+    color:#fff;
+    .carName{
+        font-size:25px;
+    }
+    .carIntroduce{
+        font-size:20px;
+    }
+}
+// 图片比较小的热门车系内容
+.info_carSeries_small {
+     width:203px;
+     position: absolute;
+     bottom:0px;
+     left:0px;
+     background-color:rgba(0, 0, 0, 0.3);
+     padding-left:20px;
+     color:#fff;
+     .carName {
+        font-size: 13px;
+     }
+     .carIntroduce {
+        font-size: 10px;
+     }
+}
+// 查看更多
+.more{
+    cursor: pointer;
+}
+// 热门关注排行榜
+.rankList{
+    &>ul{
+        margin-top:19px;
+    }
+    &>ul:first-child{
+        margin-top: 0px;
+    }
+    ul{
+        li{
+            line-height:27px;
+            color:#333;
+            &:first-child{
+                float:left;
+                font-size:16px;
+            }
+            .radius_circle{
+                display: inline-block;
+                width:27px;
+                height:27px;
+                border-radius:27px;
+                background-color:#f57619;
+                color:#fff;
+                font-size:23px;
+                line-height:27px;
+                text-align:center;
+                vertical-align: middle;
+                margin-right:8px;
+                // font-style:oblique;
+            }
+            .radius-gray{
+                background-color:#999;
+            }
+            &:last-child{
+                float:right;
+                font-size:14px;
+            }
+        }
+    }
+}
+// 车市选项卡内容
+.tab {
+    width:1200px;
+    height: 361px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.tab-title {
+    position: relative;
+    height: 28px;
+    color:#333;
+}
+
+.tab-title ul {
+    position: absolute;
+    width: 120px;
+    left: -1px;
+}
+
+.tab-title ul li {
+    width: 120px;
+    padding: 0 1px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    background-color: #ececec;
+    border-bottom: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    font-size: 20px;
+    color:#333;
+}
+
+.tab-title ul li.selected {
+    border-left: 2px solid #f57619;
+    background: #fff;
+    padding: 0;
+    border-right: 0px;
+}
+
+.tab-content>div {
+    margin-left: 120px;
+    display: none;
+}
+
+.tab-title,
+.tab-content {
+    float: left;
+}
+
+// 咨询底价一系列内容
+.carDetail{
+    margin-left:70px;
+    clear:both;
+    height:60px;
+    border-bottom:1px solid #d9d9d9;
+    &:last-child{
+        border-bottom:0px;
+    }
+    li{
+        font-size:16px;
+        float:left;
+        line-height:60px;
+        padding-left:16px;
+        &:last-child{
+            padding-left:130px;
+            padding-right:16px;
+        }
+    }
+}
+// 咨询底价
+.btn-console{
+    line-height:42px;
+    vertical-align: middle;
+    background-color:#999;
+    border:1px solid #999;
+    color:#fff;
+}
+.btn-console:hover{
+    background-color:#f57619;
+    border:1px solid #f57619;
+}
+.circle-gray {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #999;
+    color: #000;
+}
+.circle-gray:hover{
+    background-color:#f57619;
+}
+.tabDetail_left,
+.tabDetail_right{
+    float:left;
+}
+// 选项卡右侧的内容
+.tabDetail_right{
+    margin-left:36px;
+    margin-top:20px;
+    padding-left:50px;
+    border-left:1px solid #d9d9d9;
+     &>ul {
+         margin-top: 20px;
+     }
+     &>ul:first-child {
+         margin-top: 0px;
+     }
+    ul{
+       clear:both;
+        li{
+            font-size:16px;
+            float:left;
+            color:#333;
+            &:last-child{
+                margin-left:10px;
+            }
+            &:hover{
+                color:#f57619;
+            }
+        }
+    }
+}
+// 优质经销商
+.agent{
+    margin-top:55px;
+}
+.agent_detail{
+    width:362px;
+    height:210px;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:25px;
+    border:1px solid #000;
+    margin-left:48px;
+    margin-top:40px;
+    &:nth-child(3n+1){
+        margin-left:0px;
+    }
+    ul{
+        line-height:30px;
+        &:first-child{
+            li:last-child{
+                margin-top:20px;
+            }
+        }
+        li{
+            button{
+                width:52px;
+                height:20px;
+                font-size:14px;
+                border:0px;
+                background-color:#f57619;
+                color:#fff;
+                line-height:20px;
+                text-align:center;
+                margin-right:18px;
+            }
+        }
+    }
+    .logo{
+        margin-left:8px;
+    }
+}
+// 底部样式
+footer{
+    width:100%;
+    height:306px;
+    background-color:#999;
+    color:#fff;
+    font-size:18px;
+    margin-top:62px;
+}
+.footerBar {
+    padding-top: 45px;
+    margin-left: 38%;
+    line-height: 30px;
+    &>li{
+        float:left;
+        margin-right:100px;
+    }
+}
+.permission{
+    margin-left:38%;
+    margin-top:63px;
+}
+// 二维码
+.qrCode {
+    margin-top: 45px;
+    padding-left: 160px;
+}

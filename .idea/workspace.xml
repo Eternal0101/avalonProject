@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2af76199-7c36-454e-86bf-f421bdce0f7a" name="Default Changelist" comment="">
+      <change beforePath="E:/work/data/limit.js" beforeDir="false" afterPath="E:/work/data/limit.js" afterDir="false" />
+      <change beforePath="E:/work/dist/css/publish/publish.css" beforeDir="false" afterPath="E:/work/dist/css/publish/publish.css" afterDir="false" />
+      <change beforePath="E:/work/dist/js/header/header.js" beforeDir="false" afterPath="E:/work/dist/js/header/header.js" afterDir="false" />
+      <change beforePath="E:/work/dist/js/traditionalCar/checkParam.js" beforeDir="false" afterPath="E:/work/dist/js/traditionalCar/checkParam.js" afterDir="false" />
+      <change beforePath="E:/work/pages/newEnergy/DDQY.html" beforeDir="false" afterPath="E:/work/pages/newEnergy/DDQY.html" afterDir="false" />
+      <change beforePath="E:/work/pages/publish/nComplete.html" beforeDir="false" afterPath="E:/work/pages/publish/nComplete.html" afterDir="false" />
+      <change beforePath="E:/work/pages/publish/pComplete.html" beforeDir="false" afterPath="E:/work/pages/publish/pComplete.html" afterDir="false" />
+      <change beforePath="E:/work/pages/traditionalCar/checkParam.html" beforeDir="false" afterPath="E:/work/pages/traditionalCar/checkParam.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="E:/work" />
+  </component>
+  <component name="ProjectId" id="1Q2yi6yMZKMicW0beKVl7nQi3pN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projectRewrite" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\project_web\images" />
+      <recent name="E:\project\project_web\common\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\project_web\less\login" />
+      <recent name="E:\project\project_web\less" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2af76199-7c36-454e-86bf-f421bdce0f7a" name="Default Changelist" comment="" />
+      <created>1566983109040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566983109040</updated>
+      <workItem from="1566983110285" duration="1492000" />
+      <workItem from="1567040327508" duration="118000" />
+      <workItem from="1567040478140" duration="5605000" />
+      <workItem from="1567993760864" duration="23294000" />
+      <workItem from="1568077237126" duration="24038000" />
+      <workItem from="1568163733748" duration="244000" />
+      <workItem from="1568164101469" duration="22569000" />
+      <workItem from="1568250236238" duration="17225000" />
+      <workItem from="1568597064894" duration="4108000" />
+      <workItem from="1568605000553" duration="1987000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

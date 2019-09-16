@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="../../plugins/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../plugins/layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../plugins/banner/css/banner.css">
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../css/carHall/carHall.css">
+    <title>汽车大厅</title>
+</head>
+<body>
+    <!-- 汽车大厅 -->
+    <div  ms-controller='root'>
+        <!-- 版心 -->
+        <div class='content_box'>
+            <!-- 轻卡等分类系列 -->
+            <div class='kinds clearfix'>
+                <ul>
+                    <li><img src="../../images/qk.png" width='94px' height='60px' alt=""></li>
+                    <li>轻卡</li>
+                </ul>
+                <ul>
+                    <li><img src="../../images/zk.png" width='94px' height='60px' alt=""></li>
+                    <li>重卡</li>
+                </ul>
+                <ul>
+                    <li><img src="../../images/qy.png" width='94px' height='60px' alt=""></li>
+                    <li>牵引车</li>
+                </ul>
+                <ul>
+                    <li><img src="../../images/zh.png" width='94px' height='60px' alt=""></li>
+                    <li>载货车</li>
+                </ul>
+                <ul>
+                    <li><img src="../../images/zx.png" width='94px' height='60px' alt=""></li>
+                    <li>自卸车</li>
+                </ul>
+                <ul>
+                    <li><img src="../../images/xny.png" width='94px' height='60px' alt=""></li>
+                    <li>新能源</li>
+                </ul>
+            </div>
+            <!-- 加盟广告 -->
+            <div class='ads'>
+                <img src="../../images/ads.png" width='100%' height='144px' alt="加盟广告">
+            </div>
+            <div class='carHall'>
+                <!-- 新闻以及热门品牌 -->
+                <div class='row mt60'>
+                    <!-- 轮播新闻 3条新闻进行轮播-->
+                    <div class='col-md-4 col-sm-4'>
+                        <div class='banner'>
+                            <!-- 代码 开始 -->
+                            <div id="focus">
+                                <ul>
+                                    <li ms-for='(index,el) in @newsList' ms-if='index < 3'>
+                                        <h2>
+                                            <a href="http://www.baidu.com">
+                                                <img ms-attr='{ src:el.images,alt:el.title }' width='380px' height='270px'  />
+                                            </a>
+                                        </h2>
+                                        <div class="slideother">
+                                            <div class="h12">
+                                                <a href="http://www.baidu.com" ms-text='el.title'></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h2>
+                                            <a href="http://www.baidu.com">
+                                                <img src='../../images/timg.gif'  width='380px' height='270px'  alt="biubiubiu~~~" />
+                                            </a>
+                                        </h2>
+                                        <div class="slideother">
+                                            <div class="h12">
+                                                <a href="http://www.baidu.com">biubiubiu~~~</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 最新新闻 显示8条数据 从第4条开始显示-->
+                    <div class='col-md-5 col-sm-5 pl60 pr0'>
+                        <div class="news_title font26  mb10">最新新闻<span class='ml4 mr4'>:</span>新型货车通告</div>
+                        <div class='news_list font16'>
+                            <ul class='clearfix'>
+                                <li><span class='circle-orange'></span></li>
+                                <li class='ml10'><a href='javascript:;'>国六实施倒计时1天 7月1日这些政策即将实施</a></li>
+                                <li class='ml10'>07/01</li>
+                            </ul>
+                            <ul class='clearfix mt10'>
+                                <li><span class='circle-orange'></span></li>
+                                <li class='ml10'>国六实施倒计时1天 7月1日这些政策即将实施</li>
+                                <li class='ml10'>07/01</li>
+                            </ul>
+                            <ul class='clearfix mt10'>
+                                <li><span class='circle-orange'></span></li>
+                                <li class='ml10'>国六实施倒计时1天 7月1日这些政策即将实施</li>
+                                <li class='ml10'>07/01</li>
+                            </ul>
+                            <ul class='clearfix mt10'>
+                                <li><span class='circle-orange'></span></li>
+                                <li class='ml10'>国六实施倒计时1天 7月1日这些政策即将实施</li>
+                                <li class='ml10'>07/01</li>
+                            </ul>
+                            <ul class='clearfix mt10'>
+                                <li><span class='circle-orange'></span></li>
+                                <li class='ml10'>国六实施倒计时1天 7月1日这些政策即将实施</li>
+                                <li class='ml10'>07/01</li>
+                            </ul>
+                            <ul class='clearfix mt10'>
+                                <li><span class='circle-orange'></span></li>
+                                <li class='ml10'>国六实施倒计时1天 7月1日这些政策即将实施</li>
+                                <li class='ml10'>07/01</li>
+                            </ul>
+                            <ul class='clearfix mt10'>
+                                <li><span class='circle-orange'></span></li>
+                                <li class='ml10'>国六实施倒计时1天 7月1日这些政策即将实施</li>
+                                <li class='ml10'>07/01</li>
+                            </ul>
+                            <ul class='clearfix mt10'>
+                                <li><span class='circle-orange'></span></li>
+                                <li class='ml10'>国六实施倒计时1天 7月1日这些政策即将实施</li>
+                                <li class='ml10'>07/01</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 热门品牌 -->
+                    <div class='col-md-3 col-sm-3 pl0 pr0'>
+                        <div class="news_title font26  mb10">热门品牌</div>
+                        <div class='news_brands'>
+                            <ul class='clearfix mt10'>
+                                <li><img src="../../images/brands.png" width='130px' height='42px' alt=""></li>
+                                <li class='ml20'><img src="../../images/brands.png" width='130px' height='42px' alt=""></li>
+                            </ul>
+                            <ul class='clearfix mt10'>
+                                <li><img src="../../images/brands.png" width='130px' height='42px' alt=""></li>
+                                <li class='ml20'><img src="../../images/brands.png" width='130px' height='42px' alt=""></li>
+                            </ul>
+                            <ul class='clearfix mt10'>
+                                <li><img src="../../images/brands.png" width='130px' height='42px' alt=""></li>
+                                <li class='ml20'><img src="../../images/brands.png" width='130px' height='42px' alt=""></li>
+                            </ul>
+                            <ul class='clearfix mt10'>
+                                <li><img src="../../images/brands.png" width='130px' height='42px' alt=""></li>
+                                <li class='ml20'><img src="../../images/brands.png" width='130px' height='42px' alt=""></li>
+                            </ul>
+                            <ul class='clearfix mt10'>
+                                <li><img src="../../images/brands.png" width='130px' height='42px' alt=""></li>
+                                <li class='ml20'><button class='btn-project btn-more'>查看更多&gt;&gt;</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 热门车系 -->
+                <div class='row hotCarSeries'>
+                    <div class='col-md-9 col-sm-9'>
+                        <div class='row'>
+                            <div class='col-sm-6 news_title font26 mb10'>热门车系</div>
+                            <div class='col-sm-6 text-right color-999 font20 more'>查看更多&gt;&gt;</div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-sm-6'>
+                                <ul class='img_carSeries'>
+                                    <li><img src="../../images/carstyle.jpg" width='410px' alt="热门车系"></li>
+                                    <li class='info_carSeries'>
+                                        <div class='carName'>东风风神S150</div>
+                                        <div class='carIntroduce'>455P马力匹配法士特8档</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class='row clearfix'>
+                                    <div class='col-sm-6 pull-left'>
+                                        <ul class='img_carSeries_small'>
+                                            <li><img src="../../images/carstyle.jpg" width='203px' height='155px'
+                                                    alt="热门车系"></li>
+                                            <li class='info_carSeries_small'>
+                                                <div class='carName'>东风风神S150</div>
+                                                <div class='carIntroduce'>455P马力匹配法士特8档</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class='col-sm-6 pull-left'>
+                                        <ul class='img_carSeries_small'>
+                                            <li><img src="../../images/carstyle.jpg" width='203px' height='155px'
+                                                    alt="热门车系"></li>
+                                            <li class='info_carSeries_small'>
+                                                <div class='carName'>东风风神S150</div>
+                                                <div class='carIntroduce'>455P马力匹配法士特8档</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <div class='row clearfix  mt10'>
+                                <div class='col-sm-6 pull-left'>
+                                    <ul class='img_carSeries_small'>
+                                        <li><img src="../../images/carstyle.jpg" width='203px' height='155px' alt="热门车系">
+                                        </li>
+                                        <li class='info_carSeries_small'>
+                                            <div class='carName'>东风风神S150</div>
+                                            <div class='carIntroduce'>455P马力匹配法士特8档</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class='col-sm-6 pull-left'>
+                                    <ul class='img_carSeries_small'>
+                                        <li><img src="../../images/carstyle.jpg" width='203px' height='155px' alt="热门车系">
+                                        </li>
+                                        <li class='info_carSeries_small'>
+                                            <div class='carName'>东风风神S150</div>
+                                            <div class='carIntroduce'>455P马力匹配法士特8档</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class='col-md-3 col-sm-3'>
+                        <div class="news_title font26 mb10">关注度排行榜</div>
+                        <div class='rankList'>
+                            <ul class='clearfix'>
+                                <li><span class='radius_circle'>1</span>解放J6P</li>
+                                <li>23.33-55.00万</li>
+                            </ul>
+                            <ul class='clearfix'>
+                                <li><span class='radius_circle'>2</span>解放J6P</li>
+                                <li>23.33-55.00万</li>
+                            </ul>
+                            <ul class='clearfix'>
+                                <li><span class='radius_circle'>3</span>解放J6P</li>
+                                <li>23.33-55.00万</li>
+                            </ul>
+                            <ul class='clearfix'>
+                                <li><span class='radius_circle radius-gray'>4</span>解放J6P</li>
+                                <li>23.33-55.00万</li>
+                            </ul>
+                            <ul class='clearfix'>
+                                <li><span class='radius_circle radius-gray'>5</span>解放J6P</li>
+                                <li>23.33-55.00万</li>
+                            </ul>
+                            <ul class='clearfix'>
+                                <li><span class='radius_circle radius-gray'>6</span>解放J6P</li>
+                                <li>23.33-55.00万</li>
+                            </ul>
+                            <ul class='clearfix'>
+                                <li><span class='radius_circle radius-gray'>7</span>解放J6P</li>
+                                <li>23.33-55.00万</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 加盟广告 -->
+                <div class='ads'>
+                    <img src="../../images/ads.png" width='100%' height='144px' alt="加盟广告">
+                </div>
+                <!-- 车市数据 -->
+                <div class='row city_car mt20'>
+                    <div class='col-md-12 col-sm-12'>
+                        <div class="news_title font26 mb40">成都市车市</div>
+                        <div class="tab">
+                            <div class="tab-title">
+                                <ul>
+                                    <li class="selected">轻卡</li>
+                                    <li>牵引车</li>
+                                    <li>载货车</li>
+                                    <li>自卸车</li>
+                                    <li>挂车</li>
+                                    <li>新能源</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class='tab-detail clearfix' style="display:block">
+                                    <div class='tabDetail_left'>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class='tabDetail_right'>
+                                        <div class="news_title font26 mb20">轻卡</div>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                    <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class='tab-detail clearfix'>
+                                    <div class='tabDetail_left'>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class='tabDetail_right'>
+                                        <div class="news_title font26 mb20">牵引车</div>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class='tab-detail clearfix'>
+                                    <div class='tabDetail_left'>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class='tabDetail_right'>
+                                        <div class="news_title font26 mb20">载货车</div>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class='tab-detail clearfix'>
+                                    <div class='tabDetail_left'>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class='tabDetail_right'>
+                                        <div class="news_title font26 mb20">自卸车</div>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class='tab-detail clearfix'>
+                                    <div class='tabDetail_left'>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class='tabDetail_right'>
+                                        <div class="news_title font26 mb20">挂车</div>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class='tab-detail clearfix'>
+                                    <div class='tabDetail_left'>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                        <ul class='carDetail'>
+                                            <li>北汽黑豹</li>
+                                            <li>H3</li>
+                                            <li>71马力</li>
+                                            <li>4x2</li>
+                                            <li>2.73米自卸车</li>
+                                            <li><button class='btn-project btn-console'>咨询底价</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class='tabDetail_right'>
+                                        <div class="news_title font26 mb20">新能源</div>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                        <ul class='clearfix'>
+                                            <li><span class='circle-gray'></span></li>
+                                            <li>42万起合资520马力XCLIENT创虎重</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 优质经销商 -->
+                <div class='row agent'>
+                    <div class='col-md-12 col-sm-12'>
+                        <div class='agent_title clearfix'>
+                            <div class="news_title font26 fl">优质经销商</div>
+                            <div class='text-right color-999 font20 more fr'>查看更多&gt;&gt;</div>
+                        </div>
+                        <div class='agent_content clearfix'>
+                            <div class='agent_detail fl'>
+                                <ul class='pull-left font16'>
+                                    <li>四川信智益汽车销售服务有限公司</li>
+                                    <li>
+                                        <button>4S店</button>
+                                        <button>售本市</button>
+                                        <button>2年</button>
+                                    </li>
+                                </ul>
+                                <ul class='pull-left logo'>
+                                    <li><img src="../../images/qx.jpg" width='96px' height='59px' alt=""></li>
+                                </ul>
+                                <div class='clearfix'></div>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>品&emsp;&emsp;牌&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>中国重汽</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>地&emsp;&emsp;址&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>四川省成都双流会缘汽配城21栋</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>经销商电话&nbsp;:&nbsp;</li>
+                                    <li class='pull-left font20'>4006839788</li>
+                                </ul>
+                            </div>
+
+                            <div class='agent_detail fl'>
+                                <ul class='pull-left font16'>
+                                    <li>四川信智益汽车销售服务有限公司</li>
+                                    <li>
+                                        <button>4S店</button>
+                                        <button>售本市</button>
+                                        <button>2年</button>
+                                    </li>
+                                </ul>
+                                <ul class='pull-left logo'>
+                                    <li><img src="../../images/qx.jpg" width='96px' height='59px' alt=""></li>
+                                </ul>
+                                <div class='clearfix'></div>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>品&emsp;&emsp;牌&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>中国重汽</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>地&emsp;&emsp;址&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>四川省成都双流会缘汽配城21栋</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>经销商电话&nbsp;:&nbsp;</li>
+                                    <li class='pull-left font20'>4006839788</li>
+                                </ul>
+                            </div>
+                            <div class='agent_detail fl'>
+                                <ul class='pull-left font16'>
+                                    <li>四川信智益汽车销售服务有限公司</li>
+                                    <li>
+                                        <button>4S店</button>
+                                        <button>售本市</button>
+                                        <button>2年</button>
+                                    </li>
+                                </ul>
+                                <ul class='pull-left logo'>
+                                    <li><img src="../../images/qx.jpg" width='96px' height='59px' alt=""></li>
+                                </ul>
+                                <div class='clearfix'></div>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>品&emsp;&emsp;牌&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>中国重汽</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>地&emsp;&emsp;址&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>四川省成都双流会缘汽配城21栋</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>经销商电话&nbsp;:&nbsp;</li>
+                                    <li class='pull-left font20'>4006839788</li>
+                                </ul>
+                            </div>
+                            <div class='agent_detail fl'>
+                                <ul class='pull-left font16'>
+                                    <li>四川信智益汽车销售服务有限公司</li>
+                                    <li>
+                                        <button>4S店</button>
+                                        <button>售本市</button>
+                                        <button>2年</button>
+                                    </li>
+                                </ul>
+                                <ul class='pull-left logo'>
+                                    <li><img src="../../images/qx.jpg" width='96px' height='59px' alt=""></li>
+                                </ul>
+                                <div class='clearfix'></div>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>品&emsp;&emsp;牌&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>中国重汽</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>地&emsp;&emsp;址&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>四川省成都双流会缘汽配城21栋</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>经销商电话&nbsp;:&nbsp;</li>
+                                    <li class='pull-left font20'>4006839788</li>
+                                </ul>
+                            </div>
+                            <div class='agent_detail fl'>
+                                <ul class='pull-left font16'>
+                                    <li>四川信智益汽车销售服务有限公司</li>
+                                    <li>
+                                        <button>4S店</button>
+                                        <button>售本市</button>
+                                        <button>2年</button>
+                                    </li>
+                                </ul>
+                                <ul class='pull-left logo'>
+                                    <li><img src="../../images/qx.jpg" width='96px' height='59px' alt=""></li>
+                                </ul>
+                                <div class='clearfix'></div>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>品&emsp;&emsp;牌&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>中国重汽</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>地&emsp;&emsp;址&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>四川省成都双流会缘汽配城21栋</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>经销商电话&nbsp;:&nbsp;</li>
+                                    <li class='pull-left font20'>4006839788</li>
+                                </ul>
+                            </div>
+                            <div class='agent_detail fl'>
+                                <ul class='pull-left font16'>
+                                    <li>四川信智益汽车销售服务有限公司</li>
+                                    <li>
+                                        <button>4S店</button>
+                                        <button>售本市</button>
+                                        <button>2年</button>
+                                    </li>
+                                </ul>
+                                <ul class='pull-left logo'>
+                                    <li><img src="../../images/qx.jpg" width='96px' height='59px' alt=""></li>
+                                </ul>
+                                <div class='clearfix'></div>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>品&emsp;&emsp;牌&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>中国重汽</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>地&emsp;&emsp;址&nbsp;:&nbsp;</li>
+                                    <li class='pull-left'>四川省成都双流会缘汽配城21栋</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li class='pull-left'>经销商电话&nbsp;:&nbsp;</li>
+                                    <li class='pull-left font20'>4006839788</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--content_box -->
+       <include src='http://127.0.0.1:3000/views/footer/footer.html'></include>
+    </div>
+    <script src='../../plugins/jquery/jquery.min.js'></script>
+    <script src='../../plugins/layui/dist/layui.js'></script>
+    <script src='../../plugins/avalon/avalon.min.js'></script>
+    <script src='../../plugins/common/include.js'></script>
+    <script src='../../plugins/banner/js/banner.js'></script>
+    <script src='../../js/data/api.js'></script>
+    <script src='../../js/data/return_data.js'></script>
+    <script src='../../js/carHall/carHall.js'></script>
+</body>
+</html>

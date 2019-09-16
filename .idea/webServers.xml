@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7b7ff354-3e98-49b6-8c29-867441090b10" name="Eternal" url="http://139.155.127.155">
+        <fileTransfer host="139.155.127.155" port="43961">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="43961" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="4ec7691d-1c8e-4540-b8bb-7d9d7bc62e34" name="Never" url="http://139.155.127.155">
+        <fileTransfer host="139.155.127.155" port="43961">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="43961" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

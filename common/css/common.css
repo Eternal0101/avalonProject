@@ -1,0 +1,106 @@
+/* 字体样式 */
+.font12 {font-size: 12px;}
+.font14 {font-size:14px;}
+.font16 {font-size: 16px;}
+.font18 {font-size: 18px;}
+.font20 {font-size: 20px;}
+.font22 {font-size: 22px;}
+.font24 {font-size: 24px;}
+.font26 {font-size: 26px;}
+.font28 {font-size: 28px;}
+.font30 {font-size: 30px;}
+.font32 {font-size: 32px;}
+.font80 {font-size:80px;}
+.font50 {font-size:50px;}
+.h870 { height:870px;}
+/* 浮动以及清除浮动 */
+.fl {float: left;}
+.fr {float: right;}
+.cl:after {width: 0; height: 0; content: ""; clear: both; display: block;}
+/* 边距效果 */
+.m20{margin-left:20%;}
+.m40{margin-left:40%;}
+/* 左边距 */
+.ml0{margin-left:0px;}
+.ml4{margin-left:4px;}
+.ml8{margin-left:8px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml26{margin-left:26%;}
+.ml30{margin-left:30px;}
+.ml40{margin-left:40px;}
+.ml50{margin-left:50px;}
+.ml60{margin-left:60px;}
+.ml70{margin-left:70px;}
+.ml80{margin-left:80px;}
+.ml90{margin-left:90px;}
+/* 右边距 */
+.mr4{margin-right:4px;}
+.mr8{margin-right:8px;}
+.mr10{margin-right:10px;}
+.mr20{margin-right:20px;}
+.mr30{margin-right:30px;}
+.mr40{margin-right:40px;}
+.mr50{margin-right:50px;}
+.mr60{margin-right:60px;}
+.mr70{margin-right:70px;}
+.mr80{margin-right:80px;}
+.mr90{margin-right:90px;}
+/* 上边距 */
+.mt10{margin-top:10px;}
+.mt19{margin-top:19px;}
+.mt20{margin-top:20px;}
+.mt25{margin-top:25px;}
+.mt30{margin-top:30px;}
+.mt40{margin-top:40px;}
+.mt45{margin-top:45px;}
+.mt50{margin-top:50px;}
+.mt60{margin-top:60px;}
+.mt70{margin-top:70px;}
+.mt80{margin-top:80px;}
+.mt90{margin-top:90px;}
+/* 下边距 */
+.mb10{margin-bottom:10px;}
+.mb20{margin-bottom:20px;}
+.mb40{margin-bottom:40px;}
+/* 内边距 */
+.pl10{padding-left:10px;}
+.pl50{padding-left:50px;}
+.pl60{padding-left:60px;}
+.pl60{padding-left:60px;}
+.pr34{padding-right:34px;}
+.pr70{padding-right:70px;}
+.pr60{padding-right:60px;}
+.pl0{padding-left:0px;}
+.pr0{padding-right:0px;}
+/* 字体粗细 */
+.fontw {font-weight: bold;}
+/* 字体颜色 */
+.color-fff {color: #fff;}
+.color-000{color:#000;}
+.color-999{color:#999;}
+/* 宽度 */
+.w400{
+    width:400px;
+}
+.w203{
+    width:203px;
+}
+/* 隐藏显示 */
+.dis_none{display:none;}
+a:hover,a:link,a:visited{color:#333;text-decoration: none!important;}
+.bg-orange{background-color:#f57619;}
+.content_box{width:1200px;margin:0 auto;}
+.textOverflow{text-overflow:ellipsis}
+/* 按钮 */
+.btn-project{
+    width:130px;
+    height:42px;
+    border:0px;
+    border:1px solid #f57619;
+    color:#f57619;
+    background-color:#fff;
+    outline: none;
+    border-radius:4px;
+}

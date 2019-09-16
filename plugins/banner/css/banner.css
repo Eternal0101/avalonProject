@@ -1,0 +1,225 @@
+/*公用*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    letter-spacing: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+em {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+/* 轮播图的容器 */
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+/*幻灯片*/
+#focus {
+    width: 380px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    /* margin: 30px auto; */
+}
+
+#focus ul {
+    height: 270px;
+    position: absolute;
+}
+
+#focus ul li {
+    float: left;
+    width: 380px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    /* background: #000; */
+}
+
+#focus ul li div {
+    position: absolute;
+    overflow: hidden;
+}
+
+/* #focus .btnBg {
+    position: absolute;
+    width: 320px;
+    left: 0;
+    bottom: 0;
+    background: #000;
+} */
+
+#focus .btn {
+    position: absolute;
+    width: 320px;
+    height: 20px;
+    padding: 5px 10px;
+    right: 12px;
+    bottom: 60px;
+    text-align: right;
+}
+
+#focus .btn span {
+    display: inline-block;
+    _display: inline;
+    _zoom: 1;
+    width: 10px;
+    height: 10px;
+    _font-size: 0;
+    margin-left: 5px;
+    cursor: pointer;
+    background: #f57619;
+    border-radius: 10px;
+
+}
+
+#focus .btn span.on {
+    background: #fff;
+}
+
+#focus .preNext {
+    width: 45px;
+    height: 100px;
+    position: absolute;
+    top: 90px;
+    background: url('../images/sprite.png') no-repeat 0 0;
+    cursor: pointer
+}
+
+#focus .pre {
+    left: 0;
+}
+
+#focus .next {
+    right: 0;
+    background-position: right top;
+}
+
+#focus ul li .slideother {
+    position: absolute;
+    left: 0px;
+    top: 280px;
+    width: 380px;
+    height: 80px;
+    display: inline-block;
+}
+
+#focus ul li .slideother .h12 {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+}
+
+#focus ul li .slideother .h12 a {
+    color: #f57619!important;
+    font-size: 14px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+#focus ul li .slideother .h12 a:hover {
+    text-decoration: underline;
+}
+
+#focus ul li .slideother p {
+    padding-left: 10px;
+    position: absolute;
+    top: 38px;
+    left: 55px;
+}
+
+#focus ul li .slideother p a {
+    color: #8B8B8B;
+    text-decoration: none;
+}
+
+#focus ul li .slideother a:hover {
+    color: #FFF;
+}
+
+#focus ul li .slideother p a:hover {
+    text-decoration: none;
+}
