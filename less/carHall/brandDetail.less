@@ -1,0 +1,324 @@
+// 品牌详情
+.brandDetail,
+.popularType {
+    width:100%;
+    margin-top:36px;
+    border-top:6px solid #f57619;
+    background-color:#eaeaea;
+}
+// 图片
+.detail_img{
+    padding:40px 40px 58px 25px;
+    border-right:1px solid #999;
+    ul{
+        text-align:center;
+        li{
+            &:last-child{
+                margin-top:55px;
+                font-size:26px;
+                letter-spacing: 10px;
+            }
+        }
+    }
+}
+// 内容
+.detail_show{
+    padding:55px 0px 37px 60px;
+    font-size:20px;
+}
+.detail_content{
+    &>div{
+        float:left;
+    }
+}
+.carBrands {
+    font-size:16px;
+    width:70%;
+    span{
+        display:inline-block;
+        line-height: 26px;
+        margin-left:20px;
+    }
+}
+.detail_content{
+    float:left;
+    &:nth-child(2){
+        margin-left:16px;
+    }
+    &:nth-child(3){
+        margin-top:37px;
+    }
+}
+// 展开隐藏
+.changeStatus{
+    border-bottom:1px solid #999;
+    &>ul{
+        margin-left:55px;
+        padding-bottom:10px;
+        li{
+            float:left;
+            &:first-child{
+                color:#f57619;
+            }
+            &:nth-child(2){
+                margin-left:4px;
+                margin-right:4px;
+            }
+            &:last-child{
+                color:#18a112;
+            }
+        }
+    }
+}
+.allType{
+    margin-left:55px;
+    ul{
+        margin-top:20px;
+        li{
+            float:left;
+            font-size:16px;
+            color:#666;
+            &:nth-child(2){
+                margin-left:40px;
+                margin-right:40px;
+            }
+        }
+    }
+}
+// 热门车型
+.popularTitle{
+    margin-top:57px;
+    font-size:26px;
+    font-weight:bold;
+    padding-left:15px;
+}
+.popularType{
+    margin-top:0px;
+}
+.carTypeDetail{
+    ul{
+        width:285px;
+        height: 347px;
+        padding:5px;
+        text-align:center;
+        margin-left:12px;
+        margin-top: 32px;
+        float:left;
+        // border:3px solid #f57619;
+        li{
+            &:nth-child(2){
+                margin-top:20px;
+            }
+            img{
+                width:273px;
+            }
+            line-height: 30px;
+        }
+    }
+}
+// 全部车系信息
+.allSeriesMsg{
+    margin-top:74px;
+    padding-right: 20px;
+    // background-color: red;
+    border-right:1px solid #999;
+}
+.brandsTitle{
+    font-size:26px;
+    font-weight:bold;
+    width:100%;
+    border-bottom:6px solid #f57619;
+    padding-left:10px;
+}
+.moreMsg{
+    padding-left:20px;
+    // border-left:1px solid #999;
+    margin-top:74px;
+}
+// 车系筛选
+.tab{
+    margin-top:22px;
+    .tabMenu{
+        padding-left:21px;
+        padding-right:42px;
+        width:480px;
+        height:48px;
+        line-height:48px;
+        font-size:20px;
+        background-color:#f2f2f2;
+        margin-left:24px;
+        li{
+            float:left;
+            width:72px;
+            text-align:center;
+            margin-right:42px;
+            cursor: pointer;
+            &:last-child{
+                margin-right:0px;
+            }
+            &.tab_this {
+                background-color:#f57619;
+                color:#fff;
+            }
+        }
+        
+    }
+}
+.carItems{
+    .carImg,
+    .carDes{
+        float:left;
+    }
+    .carDes{
+        padding-left:22px;
+        padding-top:16px;
+        li{
+            line-height:36px;
+            span{
+                margin:0px 6px;
+            }
+        }
+    }
+    &:nth-child(even){
+        margin-left:44px;
+    }
+}
+.tabItem{
+    margin-top:10px;
+    width:100%;
+    .carItems{
+        float:left;
+        margin-top:31px;
+    }
+}
+.brandsMsg{
+    margin-top:33px;
+    .row{
+       div{
+           span{
+               margin:0 6px;
+           }
+           &:first-child{
+               padding-left: 10px;
+               color:#999;
+           }
+           &:last-child{
+               margin-right:10px;
+           }
+       }
+       &:not(:first-child){
+           margin-top:22px;
+       }
+    }
+    ul{
+        padding-left:4px;
+        line-height: 30px;
+        li:first-child{
+            color:#999;
+            span{
+                margin:0px 6px;
+            }
+        }
+        &:not(:first-child){
+            margin-top:22px;
+        }
+    }
+}
+.adsPlace{
+    margin-top:54px;
+    img:last-child{
+        margin-top:50px;
+    }
+}
+// 经销商
+.sellAgent{
+    margin-top:64px;
+    .sellTitle{
+        border-bottom:6px solid #f57619;
+        padding-left: 10px;
+        font-size:26px;
+        font-weight:bold;
+    }
+}
+
+// 经销商
+// .agent {
+//     margin-top: 31px;
+// }
+
+.agent_detail {
+    width: 362px;
+    height: 210px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 25px;
+    border: 1px solid #000;
+    margin-left: 107px;
+    margin-top:31px;
+    &:nth-child(2n+1) {
+        margin-left: 38px;
+    }
+
+    ul {
+        line-height: 30px;
+
+        &:first-child {
+            li:last-child {
+                margin-top: 20px;
+            }
+        }
+
+        li {
+            button {
+                width: 52px;
+                height: 20px;
+                font-size: 14px;
+                border: 0px;
+                background-color: #f57619;
+                color: #fff;
+                line-height: 20px;
+                text-align: center;
+                margin-right: 18px;
+            }
+        }
+    }
+
+    .logo {
+        margin-left: 8px;
+    }
+}
+// 省份
+.province{
+    &>div{
+        float:left;
+    }
+    .col-md-1{
+        width:46px;
+    }
+}
+#province,#city{
+    a{
+        margin-right: 22px;
+        display: inline-block;
+        padding:0 6px;
+        &.active{
+            background-color:#f57619;
+            color:#fff;
+        }
+    }
+}
+#province a{
+    width:80px;
+    text-align:center;
+}
+.province,
+.city {
+    padding-top:16px;
+    line-height: 35px;
+    border-bottom: 1px solid #999;
+    padding-left: 17px;
+    padding-bottom:20px;
+}
+.city {
+    padding-top:16px;
+}

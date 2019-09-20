@@ -1,11 +1,3 @@
-.newsContent {
-  margin-top: 54px;
-}
-.newsDetail {
-  height: 1032px;
-  padding: 32px 52px;
-  border: 1px solid #000;
-}
 .newsTitle {
   font-size: 26px;
   text-align: center;
@@ -14,17 +6,18 @@
   margin-top: 30px;
   padding-bottom: 24px;
   border-bottom: 1px solid #eaeaea;
-  padding-left: 108px;
+  padding-left: 38%;
 }
 .newsSubTitle ul li {
-  float: left;
-  margin-right: 20px;
   font-size: 12px;
   color: #999;
 }
-.newsSubTitle ul li span {
-  margin-left: 6px;
-  margin-right: 6px;
+.newsDetail {
+  border: 1px solid #000;
+  padding: 31px 52px 52px 52px;
+}
+.newsContent {
+  margin-top: 59px;
 }
 .newsContent p {
   font-size: 16px;
@@ -77,7 +70,6 @@
   background-color: #eaeaea;
   height: 50px;
   line-height: 50px;
-  font-size: 20px;
 }
 .hotNews .hotNewsTitle {
   font-size: 20px;

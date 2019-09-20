@@ -8,7 +8,11 @@ function reinitIframe() {
     } catch (ex) { }
 }
 window.setInterval("reinitIframe()", 200);
+// 导航 
 $('.layui-nav .layui-nav-item').on('click', function () {
     var src = $(this).attr('data-src');
-    $('#test').attr('src', src);
+    changeViews(src);
 });
+function changeViews(el){
+    $('#test').attr('src', el);
+}

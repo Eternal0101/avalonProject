@@ -1,20 +1,3 @@
-.kinds {
-  margin-top: 28px;
-  padding: 0px 0px 0px 35px;
-}
-.kinds ul {
-  width: 94px;
-  text-align: center;
-  font-size: 16px;
-  float: left;
-  margin-right: 108px;
-}
-.kinds ul:last-child {
-  margin-right: 0px;
-}
-.ads {
-  margin-top: 35px;
-}
 .news_list ul li {
   float: left;
   cursor: pointer;
@@ -28,6 +11,7 @@
 }
 .news_list ul li > a:hover {
   color: #f57619;
+  border-bottom: 1px solid #f57619;
 }
 .news_list ul li:last-child {
   color: #666;
@@ -40,6 +24,9 @@
 }
 .news_brands ul li {
   float: left;
+}
+.latestNews {
+  padding-left: 48px;
 }
 .hotCarSeries {
   margin-top: 65px;
@@ -80,6 +67,7 @@
 }
 .more {
   cursor: pointer;
+  padding-right: 20px;
 }
 .rankList > ul {
   margin-top: 19px;
@@ -264,29 +252,4 @@
 }
 .agent_detail .logo {
   margin-left: 8px;
-}
-footer {
-  width: 100%;
-  height: 306px;
-  background-color: #999;
-  color: #fff;
-  font-size: 18px;
-  margin-top: 62px;
-}
-.footerBar {
-  padding-top: 45px;
-  margin-left: 38%;
-  line-height: 30px;
-}
-.footerBar > li {
-  float: left;
-  margin-right: 100px;
-}
-.permission {
-  margin-left: 38%;
-  margin-top: 63px;
-}
-.qrCode {
-  margin-top: 45px;
-  padding-left: 160px;
 }

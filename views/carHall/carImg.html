@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="../../plugins/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../plugins/layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../css/carHall/common.css">
+    <link rel="stylesheet" href="../../css/carHall/carImg.css">
+    <title>汽车大厅</title>
+</head>
+
+<body>
+    <!-- 汽车大厅 -->
+    <div ms-controller='root'>
+        <!-- 版心 -->
+        <div class='content_box'>
+            <!-- 轻卡等分类系列 -->
+            <div class='kinds clearfix'>
+                <ul>
+                    <li><img src="../../images/qk.png" width='94px' height='60px' alt=""></li>
+                    <li>轻卡</li>
+                </ul>
+                <ul>
+                    <li><img src="../../images/zk.png" width='94px' height='60px' alt=""></li>
+                    <li>重卡</li>
+                </ul>
+                <ul>
+                    <li><img src="../../images/qy.png" width='94px' height='60px' alt=""></li>
+                    <li>牵引车</li>
+                </ul>
+                <ul>
+                    <li><img src="../../images/zh.png" width='94px' height='60px' alt=""></li>
+                    <li>载货车</li>
+                </ul>
+                <ul>
+                    <li><img src="../../images/zx.png" width='94px' height='60px' alt=""></li>
+                    <li>自卸车</li>
+                </ul>
+                <ul>
+                    <li><img src="../../images/xny.png" width='94px' height='60px' alt=""></li>
+                    <li>新能源</li>
+                </ul>
+            </div>
+            <!-- 加盟广告 -->
+            <div class='ads'>
+                <img src="../../images/ads.png" width='100%' height='144px' alt="加盟广告">
+            </div>
+            <!-- 面包屑导航 -->
+            <div class='row breadNav'>
+                <div class='col-md-6 col-sm-6 ml0'>
+                    <span>当前位置</span>
+                    <span class='ml4 mr4'>:</span>
+                    <span class="layui-breadcrumb" lay-separator=">">
+                        <a href="javascript:;" data-src='views/home.html' ms-on-click='@getPage($event)'>首页</a>
+                        <a href="javascript:;" data-src='views/carHall/carHall.html'  ms-on-click='@getPage($event)'>汽车大厅</a>
+                        <a><cite>条件找车</cite></a>
+                    </span>
+                </div>
+                <div class='col-md-6 col-sm-6 text-right'>
+                    <input type="text" class='search' placeholder="输入要查找的关键词" /><button class='btn-search'>搜索</button>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-12 col-sm-12'>
+                    <div class="title_line">陕汽德龙X3000牵引车</div>
+                </div>
+            </div>
+            <!-- 图片展示 -->
+            <div class='row'>
+                <div class='col-md-12 col-sm-12'>
+                    <div class="tab">
+                        <div class="tab-title">
+                            <ul>
+                                <li class="selected">外观</li>
+                                <li>驾驶舱</li>
+                                <li>底盘</li>
+                            </ul>
+                        </div>
+                         <div class="tab-content">
+                            <div class='tab-detail clearfix' style="display:block">
+                                <div class='tabSubTitle'>外观<span>(133张)</span></div>
+                                <div class='carImgs'>
+                                    <img src="../../images/carImg.png" alt="">
+                                    <img src="../../images/carImg.png" alt="">
+                                    <img src="../../images/carImg.png" alt="">
+                                    <img src="../../images/carImg.png" alt="">
+                                    <img src="../../images/carImg.png" alt="">
+                                    <img src="../../images/carImg.png" alt="">
+                                </div>
+                            </div>
+                            <div class='tab-detail clearfix'>
+                                <div class='tabSubTitle'>驾驶舱<span>(133张)</span></div>
+                                <div class='carImgs'>
+                                    <img src="../../images/carImg.png" alt="">
+                                    <img src="../../images/carImg.png" alt="">
+                                    <img src="../../images/carImg.png" alt="">
+                                    <img src="../../images/carImg.png" alt="">
+                                    <img src="../../images/carImg.png" alt="">
+                                    <img src="../../images/carImg.png" alt="">
+                                </div>
+                            </div>
+                            <div class='tab-detail clearfix'>
+                               <div class='tabSubTitle'>底盘<span>(133张)</span></div>
+                               <div class='carImgs'>
+                                   <img src="../../images/carImg.png" alt="">
+                                   <img src="../../images/carImg.png" alt="">
+                                   <img src="../../images/carImg.png" alt="">
+                                   <img src="../../images/carImg.png" alt="">
+                                   <img src="../../images/carImg.png" alt="">
+                                   <img src="../../images/carImg.png" alt="">
+                               </div>
+                            </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+        <!--content_box -->
+       <!-- <include src='../footer/footer.html'></include> -->
+    </div>
+    <script src='../../plugins/jquery/jquery.min.js'></script>
+    <script src='../../plugins/layui/dist/layui.js'></script>
+    <script src='../../plugins/avalon/avalon.min.js'></script>
+    <script src='../../plugins/banner/js/banner.js'></script>
+    <script src='../../js/data/api.js'></script>
+    <script src='../../js/data/return_data.js'></script>
+    <script src='../../js/carHall/carImg.js'></script>
+</body>
+
+</html>

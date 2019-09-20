@@ -1,0 +1,140 @@
+.selectChoose {
+  background-color: #eaeaea;
+}
+.kindSelect {
+  margin-top: 38px;
+}
+.selectChoose {
+  padding: 18px 26px;
+  width: 224px;
+  height: 567px;
+}
+.letterSelect {
+  font-size: 20px;
+  color: #333;
+}
+.letterSelect span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 11px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.parentWrap {
+  width: 177px;
+}
+.groupTitle {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  font-size: 26px;
+  cursor: pointer;
+  width: 176px;
+  height: 50px;
+  border: solid 1px #000000;
+  line-height: 50px;
+  text-align: center;
+}
+.menuGroup > div {
+  height: 350px;
+  display: none;
+}
+.menuGroup:nth-child(2) {
+  margin-top: 36px;
+}
+span.titleActive {
+  background-color: #f57619;
+  border: 1px solid #f57619;
+  color: #fff;
+}
+div.kindsContent {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+div.kindsContent span {
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+div.kindsContent span:nth-child(even) {
+  float: left;
+}
+div.kindsContent span:nth-child(odd) {
+  float: right;
+}
+.groupContent {
+  margin-left: 70px;
+}
+.barTitle {
+  height: 58px;
+  line-height: 58px;
+  font-size: 26px;
+  color: #333;
+  font-weight: bold;
+  background-color: #eaeaea;
+  border-top: 1px solid #000;
+}
+.barTitle .titleLine {
+  display: inline-block;
+  width: 4px;
+  height: 58px;
+  background-color: #f57619;
+  margin-right: 35px;
+}
+.barTitle li {
+  float: left;
+}
+.groupDetail ul {
+  margin-top: 45px;
+}
+.groupDetail ul:first-child {
+  margin-top: 30px;
+}
+.groupDetail ul li {
+  margin-left: 45px;
+  font-size: 20px;
+  color: 3333;
+  float: left;
+}
+.groupItems {
+  width: 100%;
+  height: 332px;
+  border-top: solid 2px #dbdbdb;
+  border-bottom: 2px solid #dbdbdb;
+}
+.groupItems:not(:first-child) {
+  margin-top: 30px;
+}
+.groupItems > div {
+  height: 100%;
+}
+.groupItems > div:first-child {
+  background-color: #eaeaea;
+  text-align: center;
+}
+.groupItems > div:first-child img {
+  vertical-align: middle;
+  margin-top: 100px;
+  margin-left: 12px;
+}
+.groupItems > div:first-child ul li:last-child {
+  margin-top: 20px;
+  font-size: 26px;
+  color: #333;
+  letter-spacing: 10px;
+}
+.groupItems > div:last-child ul {
+  padding-left: 40px;
+  padding-top: 32px;
+}
+.groupItems > div:last-child ul li {
+  float: left;
+  margin-right: 60px;
+  color: #333;
+}
+.groupItems > div:last-child ul:not(:first-child) {
+  margin-top: 26px;
+}

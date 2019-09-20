@@ -24,7 +24,7 @@ ul,p{
 /** 设置默认字体 **/
 body,
 button, input, select, textarea /* for ie */ {
- font-family:微软雅黑; font-size:16px; background-color: white;color:#000;
+ font-family:微软雅黑; font-size:16px; background-color: white;color:#333;
 }
 button{
   cursor: pointer;

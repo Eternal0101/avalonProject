@@ -1,0 +1,151 @@
+// 品牌的折叠查找
+.selectChoose{
+    background-color:#eaeaea;
+}
+.kindSelect{
+    margin-top:38px;
+}
+.selectChoose{
+    padding:18px 26px;
+    width:224px;
+    height:567px;
+}
+// 字母查找
+.letterSelect{
+    font-size:20px;
+    color:#333;
+    span{
+        display: inline-block;
+        width:30px;
+        height:30px;
+        line-height:30px;
+        text-align:center;
+        margin-left:11px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}
+// 弹出来的菜单
+.parentWrap {
+    width: 177px;
+}
+.groupTitle {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    width: 176px;
+    height: 50px;
+    border: solid 1px #000000;
+    line-height: 50px;
+    text-align: center;
+}
+
+.menuGroup>div {
+    height: 350px;
+    display: none;
+}
+.menuGroup:nth-child(2){
+    margin-top: 36px;
+}
+span.titleActive{
+    background-color:#f57619;
+    border:1px solid #f57619;
+    color:#fff;
+}
+// 类型查找
+div.kindsContent{
+    padding-left: 15px;
+    padding-right: 15px;
+    span{
+        display: inline-block;
+        margin-top: 20px;
+        cursor: pointer;
+        &:nth-child(even){
+            float:left;
+        }
+        &:nth-child(odd){
+            float:right;
+        }
+    }
+}
+.groupContent{
+    margin-left:70px;
+}
+.barTitle{
+    height: 58px;
+    line-height: 58px;
+    font-size:26px;
+    color:#333;
+    font-weight:bold;
+    background-color: #eaeaea;
+    border-top:1px solid #000;
+    .titleLine{
+        display: inline-block;
+        width: 4px;
+        height: 58px;
+        background-color: #f57619;
+        margin-right: 35px;
+    }
+    li{
+        float:left;
+    }
+}
+.groupDetail{
+    ul{
+        margin-top:45px;
+        &:first-child{
+            margin-top:30px;
+        }
+        li{
+            margin-left:45px;
+            font-size:20px;
+            color:3333;
+            float:left;
+        }
+    }
+}
+.groupItems{
+    width:100%;
+    height: 332px;
+    border-top: solid 2px #dbdbdb;
+    border-bottom:2px solid #dbdbdb;
+    &:not(:first-child){
+        margin-top:30px;
+    }
+    &>div{
+        height: 100%;
+    }
+    &>div:first-child{
+        background-color:#eaeaea;
+        text-align:center;
+        img{
+            vertical-align: middle;
+            margin-top: 100px;
+            margin-left: 12px;
+        }
+        ul{
+            li:last-child{
+                margin-top:20px;
+                font-size:26px;
+                color:#333;
+                letter-spacing: 10px;
+            }
+        }
+    }
+    &>div:last-child{
+        ul{
+            padding-left:40px;
+            padding-top:32px;
+            li{
+                float:left;
+                margin-right:60px;
+                color:#333;
+            }
+            &:not(:first-child){
+                margin-top:26px;
+            }
+        }
+    }
+}
