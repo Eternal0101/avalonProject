@@ -1,0 +1,220 @@
+.ads{
+    margin-top: 37px;
+}
+// 全部订单
+.orders{
+    margin-top: 90px;
+    &>div:first-child{
+        width: 70%;
+    }
+    // width: 72%;
+}.tabContent{
+    width: 94%;
+}
+.tab{
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+    li{
+        font-size: 24px;
+        float: left;
+        &:first-child{
+            padding-left: 0px;
+        }
+        span{
+            display: inline-block;
+            height: 25px;
+            width: 2px;
+            background-color: #333;
+            vertical-align: middle;
+            margin:0  16px;
+        }
+        &.active{
+            color:#f57619;
+            font-weight: bold;
+        }
+    }
+}
+// 搜索框
+.searchInput{
+    margin-top: 20px;
+    margin-bottom: 8px;
+    li{
+        float: left;
+        input{
+            display: inline-block;
+            width: 259px;
+            height: 36px;
+            border: 0px;
+            border: 1px solid #999;
+            border-right: 0px;
+            padding-left: 10px;
+            outline: none;
+        }
+        button{
+            width: 98px;
+            height: 36px;
+            border: 0px;
+            border: 1px solid #f57619;
+            background-color: #f57619;
+            color: #fff;
+        }
+    }
+}
+// 订单信息
+.order-detail{
+    border: 1px solid #999;
+    margin-top: 27px;
+    .orderTitle{
+        background-color: #fffaf6;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+        ul{
+            &:first-child{
+                color: #f57619;
+                padding-left: 16px;
+            }
+            li{
+                float: left;
+                span{
+                    margin:0px 6px;
+                }
+            }
+            &:nth-child(2){
+                li{
+                    &:first-child{
+                        margin-right: 84px;
+                        color:#f57619;
+                    }
+                    &:last-child{
+                        padding-right: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+// 订单内容
+.orderContent{
+    padding:23px 18px 30px 15px;
+    .orderDes{
+        padding-left: 12px;
+        ul {
+            li {
+                line-height: 27px;
+                font-size: 14px;
+                &:first-child {
+                    margin-bottom: 10px;
+                    margin-top: 0px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    span{
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+.qrCode{
+    text-align: center;
+    border: 1px solid #999;
+}
+.transport{
+    li{
+        font-size: 14px;
+        color: #999;
+        text-align: center;
+        cursor: pointer;
+        button{
+            width: 106px;
+            height: 31px;
+            border: solid 1px #f57619;
+            line-height: 31px;
+            text-align: center;
+            border: 0px;
+            border: 1px solid #f57619;
+            color:#f57619;
+        }
+        &:first-child{
+            text-align: right;
+        }
+        &:not(:first-child){
+            padding-left: 32px;
+            margin-top: 16px;
+        }
+    }
+}
+// 三角形
+.tri{
+    width: 0;
+    height: 0;
+    border: 7px solid;
+    border-color: transparent transparent #999;
+    margin-left: 52px;
+}
+.code{
+    position: relative;
+    .codeContent{
+        position: absolute;
+        top: -42px;
+        left: -32px;
+    }
+}
+// 统计的盒子
+.countBox{
+    width: 309px;
+    height: 322px;
+    border: 1px solid #999;
+    padding-left: 19px;
+    padding-top: 23px;
+    margin-left: 52px;
+    &:not(:first-child){
+        margin-top: 78px;
+    }
+    .countTitle{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .countNumber{
+        width: 183px;
+        height: 183px;
+        text-align: center;
+        background-color: #fffaf6;
+        border-radius: 183px;
+        line-height: 183px;
+        margin-left: 40px;
+        margin-top: 9px;
+        span{
+            color:#f57619;
+            &:first-child{
+                font-size:42px;
+                font-weight: bold;
+            }
+            &:last-child{
+                font-size: 35px;
+            }
+        }
+    }
+    .btn-apply{
+        width: 195px;
+        height: 42px;
+        background-color: #f57619;
+        color: #fff;
+        outline: none;
+        border:0px;
+        border: 1px solid #f57619;
+        line-height: 42px;
+        text-align: center;
+        margin-top: 19px;
+        margin-left: 37px;
+    }
+}
+// 分页
+.layui-laypage{
+    margin:67px 0px 0px 127px;
+}
+.layui-laypage a,
+.layui-laypage span{
+    font-size: 16px;
+}

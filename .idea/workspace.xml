@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2af76199-7c36-454e-86bf-f421bdce0f7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/common/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/carHall/carHall.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/carHall/carHall.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/carHall/carNewsDetail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/carHall/carNewsDetail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/carHall/carHall.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/carHall/carHall.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/carHall/carNewsDetail.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/carHall/carNewsDetail.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/carHall/carFilter.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/carHall/carFilter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/carHall/carFilter.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/carHall/carFilter.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/carHall/carHall.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/carHall/carHall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/less/carHall/carHall.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/carHall/carHall.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/less/carHall/carNewsDetail.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/carHall/carNewsDetail.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/carHall/carHall.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/carHall/carHall.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/carHall/carNewsDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/carHall/carNewsDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/carHall/carFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/carHall/carFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/less/carHall/carFilter.less" beforeDir="false" afterPath="$PROJECT_DIR$/less/carHall/carFilter.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/carHall/carFilter.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/carHall/carFilter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/order/order.html" beforeDir="false" />
       <change beforePath="E:/work/dist/js/index.js" beforeDir="false" afterPath="E:/work/dist/js/index.js" afterDir="false" />
       <change beforePath="E:/work/home.html" beforeDir="false" afterPath="E:/work/home.html" afterDir="false" />
     </list>
@@ -91,6 +83,7 @@
       <workItem from="1568682200479" duration="617000" />
       <workItem from="1568683415538" duration="1320000" />
       <workItem from="1568769001423" duration="1322000" />
+      <workItem from="1569218844050" duration="2042000" />
     </task>
     <servers />
   </component>

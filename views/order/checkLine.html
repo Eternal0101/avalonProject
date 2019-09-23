@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../../plugins/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../plugins/layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../css/order/checkModel.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=n6K0xWCoAKyRgR0cYt6uVaC1EgAVAGFR">
+    </script>
+    <title>查看路线</title>
+</head>
+
+<body>
+    <div class='checkLine' ms-controller='root'>
+        <div class='titleLine'>
+            <span class='line'></span>
+            <span class='title'>查看路线</span>
+        </div>
+        <div id="allmap"></div>
+        <div id="r-result"></div>
+    </div>
+    <script src='../../plugins/jquery/jquery.min.js'></script>
+    <script src='../../plugins/layui/dist/layui.js'></script>
+    <script src='../../plugins/avalon/avalon.min.js'></script>
+    <script type="text/javascript">
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");
+        map.centerAndZoom("重庆",12);  //初始化地图,设置城市和地图级别。
+        var pointA = new BMap.Point(106.486654,29.490295);  // 创建点坐标A--大渡口区
+        var pointB = new BMap.Point(106.581515,29.615467);  // 
+        alert('从大渡口区到江北区的距离是：'+(map.getDistance(pointA,pointB)).toFixed(2)+' 米。'); //获取两点距离,保留小数点后两位
+        var polyline = new BMap.Polyline([pointA,pointB], {strokeColor:"blue", strokeWeight:6, strokeOpacity:0.5});
+        //定义折线
+        map.addOverlay(polyline); //添加折线到地图上
+    </script>
+</body>
+
+</html>

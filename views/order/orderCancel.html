@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../../plugins/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../plugins/layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../css/order/checkModel.css">
+    <title>取消货单</title>
+</head>
+
+<body>
+    <div class='cancelOrder' ms-controller='root'>
+        <div class='titleLine'>
+            <span class='line'></span>
+            <span class='title'>取消货单</span>
+        </div>
+        <div class='cancelContent'>
+            <div class='tips'>
+                <p>提示：每个月正常取消货单次数为1次，如超出每次将扣除3分信用分，信用分过低将会导致您以后无法正常接单。如对此订</p>
+                <p>单存在异议，取消订单后可选择申述处理。</p>
+            </div>
+            <div class='chooseReason'>
+                <div class='row'>
+                    <div class="col-md-6 col-sm-6">
+                        <ul class='inputCheck clearfix'>
+                            <li>
+                                <input id="color-input-red" class="checkInput" type="checkbox"
+                                    name="color-input-red" value="#f0544d" />
+                                <label for="color-input-red"></label>
+                            </li>
+                            <li>距离装货地太远</li>
+                        </ul>
+                    </div>
+                    <div class='col-md-6 col-sm-6'>
+                        <ul class='inputCheck clearfix'>
+                            <li>
+                                <input id="color-input-red" class="checkInput" type="checkbox"
+                                    name="color-input-red" />
+                                <label for="color-input-red"></label>
+                            </li>
+                            <li>中途临时改变行程</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class="col-md-6 col-sm-6">
+                        <ul class='inputCheck clearfix'>
+                            <li>
+                                <input id="color-input-red" class="checkInput" type="checkbox"
+                                    name="color-input-red" value="#f0544d" />
+                                <label for="color-input-red"></label>
+                            </li>
+                            <li>货物类型与实际情况不符</li>
+                        </ul>
+                    </div>
+                    <div class='col-md-6 col-sm-6'>
+                        <ul class='inputCheck clearfix'>
+                            <li>
+                                <input id="color-input-red" class="checkInput" type="checkbox"
+                                    name="color-input-red" />
+                                <label for="color-input-red"></label>
+                            </li>
+                            <li>货物实际重量超过订单发布重量</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class="col-md-6 col-sm-6">
+                        <ul class='inputCheck clearfix'>
+                            <li>
+                                <input id="color-input-red" class="checkInput" type="checkbox" name="color-input-red"
+                                    value="#f0544d" />
+                                <label for="color-input-red"></label>
+                            </li>
+                            <li>车型不符/车辆故障，无法运输</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class='otherReason'>
+                    <li>其他原因</li>
+                    <li>
+                        <textarea></textarea>
+                    </li>
+                </ul>
+                <div class='uploadImg'>
+                    <div class='uploadTitle'>上传凭证(0/6)</div>
+                    <ul class='clearfix uploadContent'>
+                        <li class="upload">
+                            <img id="logo" src="../../images/cancel.png" width="135px" height="147px" alt="">
+                            <span class="uploadimg">
+                                <button type="button" class="layui-btn" id="test1">上传图片</button>
+                                <img class="img-responsive" src="../../images/upload.png" alt="">
+                            </span>
+                        </li>
+                        <li class='delImg'>
+                            <img src="../../images/cancel.png" alt="">
+                            <span class='del'>X</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class='buttons clearfix'>
+                <li><button class='btn-orange' ms-on-click='@return'>返回</button></li>
+                <li><button class='btn-orange'>确认取消</button></li>
+            </ul>
+        </div>
+    </div>
+    <script src='../../plugins/jquery/jquery.min.js'></script>
+    <script src='../../plugins/layui/dist/layui.js'></script>
+    <script src='../../plugins/avalon/avalon.min.js'></script>
+    <script src='../../js/order/orderCancel.js'></script>
+</body>
+
+</html>

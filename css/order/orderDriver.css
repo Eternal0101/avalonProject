@@ -1,0 +1,203 @@
+.ads {
+  margin-top: 37px;
+}
+.orders {
+  margin-top: 90px;
+}
+.orders > div:first-child {
+  width: 70%;
+}
+.tabContent {
+  width: 94%;
+}
+.tab {
+  border-bottom: 1px solid #999;
+  padding-bottom: 10px;
+}
+.tab li {
+  font-size: 24px;
+  float: left;
+}
+.tab li:first-child {
+  padding-left: 0px;
+}
+.tab li span {
+  display: inline-block;
+  height: 25px;
+  width: 2px;
+  background-color: #333;
+  vertical-align: middle;
+  margin: 0  16px;
+}
+.tab li.active {
+  color: #f57619;
+  font-weight: bold;
+}
+.searchInput {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.searchInput li {
+  float: left;
+}
+.searchInput li input {
+  display: inline-block;
+  width: 259px;
+  height: 36px;
+  border: 0px;
+  border: 1px solid #999;
+  border-right: 0px;
+  padding-left: 10px;
+  outline: none;
+}
+.searchInput li button {
+  width: 98px;
+  height: 36px;
+  border: 0px;
+  border: 1px solid #f57619;
+  background-color: #f57619;
+  color: #fff;
+}
+.order-detail {
+  border: 1px solid #999;
+  margin-top: 27px;
+}
+.order-detail .orderTitle {
+  background-color: #fffaf6;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+}
+.order-detail .orderTitle ul:first-child {
+  color: #f57619;
+  padding-left: 16px;
+}
+.order-detail .orderTitle ul li {
+  float: left;
+}
+.order-detail .orderTitle ul li span {
+  margin: 0px 6px;
+}
+.order-detail .orderTitle ul:nth-child(2) li:first-child {
+  margin-right: 84px;
+  color: #f57619;
+}
+.order-detail .orderTitle ul:nth-child(2) li:last-child {
+  padding-right: 35px;
+}
+.orderContent {
+  padding: 23px 18px 30px 15px;
+}
+.orderContent .orderDes {
+  padding-left: 12px;
+}
+.orderContent .orderDes ul li {
+  line-height: 27px;
+  font-size: 14px;
+}
+.orderContent .orderDes ul li:first-child {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.orderContent .orderDes ul li:first-child span {
+  margin-right: 8px;
+}
+.qrCode {
+  text-align: center;
+  border: 1px solid #999;
+}
+.transport li {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  cursor: pointer;
+}
+.transport li button {
+  width: 106px;
+  height: 31px;
+  border: solid 1px #f57619;
+  line-height: 31px;
+  text-align: center;
+  border: 0px;
+  border: 1px solid #f57619;
+  color: #f57619;
+}
+.transport li:first-child {
+  text-align: right;
+}
+.transport li:not(:first-child) {
+  padding-left: 32px;
+  margin-top: 16px;
+}
+.tri {
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  border-color: transparent transparent #999;
+  margin-left: 52px;
+}
+.code {
+  position: relative;
+}
+.code .codeContent {
+  position: absolute;
+  top: -42px;
+  left: -32px;
+}
+.countBox {
+  width: 309px;
+  height: 322px;
+  border: 1px solid #999;
+  padding-left: 19px;
+  padding-top: 23px;
+  margin-left: 52px;
+}
+.countBox:not(:first-child) {
+  margin-top: 78px;
+}
+.countBox .countTitle {
+  font-size: 22px;
+  font-weight: bold;
+}
+.countBox .countNumber {
+  width: 183px;
+  height: 183px;
+  text-align: center;
+  background-color: #fffaf6;
+  border-radius: 183px;
+  line-height: 183px;
+  margin-left: 40px;
+  margin-top: 9px;
+}
+.countBox .countNumber span {
+  color: #f57619;
+}
+.countBox .countNumber span:first-child {
+  font-size: 42px;
+  font-weight: bold;
+}
+.countBox .countNumber span:last-child {
+  font-size: 35px;
+}
+.countBox .btn-apply {
+  width: 195px;
+  height: 42px;
+  background-color: #f57619;
+  color: #fff;
+  outline: none;
+  border: 0px;
+  border: 1px solid #f57619;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 19px;
+  margin-left: 37px;
+}
+.layui-laypage {
+  margin: 67px 0px 0px 127px;
+}
+.layui-laypage a,
+.layui-laypage span {
+  font-size: 16px;
+}
