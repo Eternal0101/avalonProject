@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<head>
+    <title>个人中心</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../plugins/layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/personal/personal.css">
+</head>
+<body>
+    <div class='header'>
+        <header>
+            <!-- 版心 -->
+            <div class='content_box'>
+                <!-- 顶部的引导导航条 -->
+                <div class='row topBar'>
+                    <div class='col-md-6 col-sm-6'>
+                        <div class='row'>
+                            <div class='col-sm-5'>欢迎登陆纵运汽车服务平台</div>
+                            <div class='col-sm-7'>成都市|<span>切换</span></div>
+                        </div>
+                    </div>
+                    <div class='col-md-6 col-sm-6'>
+                        <div class='row  text-right'>
+                            <div class='col-sm-2 col-sm-offset-6'>消息</div>
+                            <div class='col-md-4 col-sm-4 userMsg'>
+                                <ul class='clearfix'>
+                                    <li>头像</li>
+                                    <li>用户名</li>
+                                </ul>
+                            </div>
+                            <!-- <div class='col-sm-4'>您好,请<a href='javascript:;'>登录</a>或<a href='javaascript:;'>注册</a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 导航条 -->
+        <div class='navBar  fixNavBar'>
+            <!-- 版心 -->
+            <div class='content_box'>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 bg-fff">
+                        <div class='row'>
+                            <div class='col-sm-9 text-left'><img src="../../images/logo.png" width='202px' height='80px' alt="logo"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9 pl0">
+                        <ul class="layui-nav">
+                            <li class="layui-nav-item" data-src='../../views/home.html'><a href="javascript:;">首页</a></li>
+                            <li class="layui-nav-item" data-src='../../views/carHall/carHall.html'><a href="javascript:;">汽车大厅</a></li>
+                            <li class="layui-nav-item" data-src='../../views/financial/financial.html'><a href="javascript:;">金融服务</a></li>
+                            <li class="layui-nav-item" data-src='../../views/orderDriver/orderDriver.html'><a href="javascript:;">订单管理</a></li>
+                            <li class="layui-nav-item" data-src='../../views/logistics/logistics.html'><a href="javascript:;">物流公司</a></li>
+                            <li class="layui-nav-item" data-src='../../views/cooperate/cooperate.html'><a href="javascript:;">我要合作</a></li>
+                            <li class="layui-nav-item" data-src='../../views/download/download.html'><a href="javascript:;">APP下载</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='content_box'>
+        <!-- 个人中心的内容 -->
+        <div class='row personal mt50'>
+            <div class='col-md-3 col-sm-3 personalItem'>
+                <ul class='avatar'>
+                    <li><img src="../../images/avartar.png" alt=""></li>
+                    <li>用户名</li>
+                    <li>用户类型</li>
+                </ul>
+                <ul class='personalList'>
+                    <li class='active'>个人资料</li>
+                    <li>车辆管理</li>
+                    <li>消息</li>
+                    <li>账户</li>
+                    <li>银行卡</li>
+                    <li>代理商家</li>
+                </ul>
+            </div>
+            <div class='col-md-8 col-sm-8 personalContent'>
+                <!-- 个人资料 -->
+                <div class='personalDetail personalData' ms-controller='personalData'>
+                    <div class='PanelTitle'>个人资料</div>
+                    <div class='personalDes'>
+                        <ul class='personalLogo'>
+                            <li><img src="../../images/avartar.png" alt=""></li>
+                            <li class='font20 fontw mt30'>用户名</li>
+                        </ul>
+                        <div class='row description pt50'>
+                            <div class='col-md-6 col-sm-6'>
+                                <ul class='clearfix'>
+                                    <li>手机号</li>
+                                    <li>:</li>
+                                    <li>18785227896</li>
+                                </ul>
+                            </div>
+                            <div class='col-md-6 col-sm-6 text-right'>
+                                <button class='btn-orange'>更换</button>
+                            </div>
+                        </div>
+                        <div class='row description pt50'>
+                            <div class='col-md-6 col-sm-6'>
+                                <ul class='clearfix'>
+                                    <li>登录密码</li>
+                                    <li>:</li>
+                                    <li>密码要求至少包含字母，符号或数字中</br>
+                                        的两项且长度超过8位，建议您经常修改</br>
+                                        密码，以保证账号更加安全。</li>
+                                </ul>
+                            </div>
+                            <div class='col-md-6 col-sm-6 text-right'>
+                                <button class='btn-orange mt8'>修改</button>
+                            </div>
+                        </div>
+                        <div class='row description pt30'>
+                            <div class='col-md-12 col-sm-12'>
+                                <ul class='clearfix'>
+                                    <li>实名人证</li>
+                                    <li>:</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='row description pt30'>
+                            <div class='col-md-6 col-sm-6'>
+                                <ul class='clearfix'>
+                                    <li>公司名称</li>
+                                    <li>:</li>
+                                    <li>四川吉兴汽车贸易有限公司</li>
+                                </ul>
+                            </div>
+                            <div class='col-md-6 col-sm-6 text-right'>
+                                <button class='btn-orange mt8'>修改</button>
+                            </div>
+                        </div>
+                        <div class='row description pt30'>
+                            <div class='col-md-12 col-sm-12'>
+                                <ul class='clearfix'>
+                                    <li>营业执照</li>
+                                    <li>:</li>
+                                    <li>65123131213131</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='row description pt30'>
+                            <div class='col-md-12 col-sm-12'>
+                                <ul class='clearfix'>
+                                    <li>公司地址</li>
+                                    <li>:</li>
+                                    <li>四川省成都市武侯区红牌楼2栋301</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 车辆管理 -->
+                <div class='personalDetail vehicleManagement dis_none' ms-controller='vehicleManagement'>
+                    <ul class='PanelTitle clearfix'>
+                        <li class='pull-left'>车辆管理</li>
+                        <li class='pull-right'><button class='btn-add' ms-on-click='@addCar'>添加车辆</button></li>
+                    </ul>
+                    <div class='vehicleContent mt50 clearfix'>
+                        <div class='vehicleDetail pull-left'>
+                            <img src="../../images/vCar.png" alt="">
+                            <div class='angel-left'></div>
+                            <div class='angel-right'></div>
+                            <ul class='vehicleDes'>
+                                <li>——&emsp;川A4512&emsp;——</li>
+                                <li>货物运输<span>·</span>一汽大众</li>
+                                <li class='unbind'>解&emsp;绑</li>
+                            </ul>
+                            <!-- <div class='unbind'>解绑</div> -->
+                        </div>
+                        <div class='vehicleDetail pull-left'>
+                            <img src="../../images/vCar.png" alt="">
+                            <div class='angel-left'></div>
+                            <div class='angel-right'></div>
+                            <ul class='vehicleDes'>
+                                <li>——&emsp;川A4512&emsp;——</li>
+                                <li>货物运输<span>·</span>一汽大众</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 消息 -->
+                <div class='personalDetail personalMsg dis_none' ms-controller='personalMsg'>
+                    <div class='PanelTitle'>消息</div>
+                    <div class='allInforms'>
+                        <div class='row informs mt50'>
+                            <div class='col-md-1 col-sm-1 formLogo'>
+                                <img src="../../images/form_logo.png" alt="">
+                            </div>
+                            <div class='col-md-9 col-sm-9 informContent'>
+                                <ul class='clearfix fontw informTitle'>
+                                    <li>系统通知</li>
+                                    <li>2018-09-12</li>
+                                    <li>15：32</li>
+                                </ul>
+                                <div class='informDetail'>
+                                    <p>平台将定于12月21日晚8：00进行更新:</p>
+                                    <p>本次更新的主要功能有某某功能</p>
+                                    <p>敬请期待！</p>
+                                </div>
+                            </div>
+                            <div class='col-md-2 col-sm-2 text-right'><button class='btn-del'>删除</button></div>
+                        </div>
+                        <div class='row informs'>
+                            <div class='col-md-1 col-sm-1 formLogo'>
+                                <img src="../../images/form_logo.png" alt="">
+                            </div>
+                            <div class='col-md-9 col-sm-9 informContent'>
+                                <ul class='clearfix fontw informTitle'>
+                                    <li>系统通知</li>
+                                    <li>2018-09-12</li>
+                                    <li>15：32</li>
+                                </ul>
+                                <div class='informDetail'>
+                                    <p>平台将定于12月21日晚8：00进行更新:</p>
+                                    <p>本次更新的主要功能有某某功能</p>
+                                    <p>敬请期待！</p>
+                                </div>
+                            </div>
+                            <div class='col-md-2 col-sm-2 text-right'><button class='btn-del'>删除</button></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 账户 -->
+                <div class='personalDetail personalAccount dis_none' ms-controller='personalAccount'>
+                    账户
+                </div>
+                <!-- 银行卡 -->
+                <div class='personalDetail personalBankCard dis_none' ms-controller='personalBankCard'>
+                    银行卡
+                </div>
+                <!-- 代理商家 -->
+                <div class='personalDetail personalAgent dis_none' ms-controller='personalAgent'>
+                    代理商家
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class='row'>
+            <div class='col-md-6 col-sm-6'>
+                <ul class="clearfix  footerBar">
+                    <li>关于我们</li>
+                    <li>法律声明</li>
+                    <li>意见反馈</li>
+                </ul>
+                <div class='permission font14'>
+                    <p>经营许可证编号<span class='ml8 mr8'>:</span>京ICP证080575号/京ICO备09080840号</p>
+                    <p class='mt30'>京公安网1101052035781号</p>
+                </div>
+            </div>
+            <div class='col-md-6 col-sm-6 clearfix qrCode'>
+                <ul class='pull-left'>
+                    <li><img src="../../images/qrCode.png" alt=""></li>
+                    <li>iPhone客户端</li>
+                </ul>
+                <ul class='pull-left ml80'>
+                    <li><img src="../../images/qrCode.png" alt=""></li>
+                    <li>Android客户端</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src='../../plugins/jquery/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src='../../plugins/layui/dist/layui.all.js'></script>
+    <script src='../../plugins/avalon/avalon.min.js'></script>
+    <script src='../../js/personal/vehicleManagement.js'></script>
+    <script>
+        $('.layui-nav .layui-nav-item').on('click', function () {
+            var src = $(this).attr('data-src');
+            location.href = src;
+        });
+        $('.personalList li').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.personalContent .personalDetail').eq($(this).index()).show().siblings().hide();
+        });
+        $(document).scroll(function(){   //页面加载时，获取滚动条初始高度
+            var distance = $(document).scrollTop();  //获取滚动条初始高度的值 ：0
+            if(distance >= 80){
+                $('.header').addClass('fixHeader');
+            }else{
+                $('.header').removeClass('fixHeader');
+            }
+        });
+    </script>
+</body>
+ 

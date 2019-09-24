@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../../plugins/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../plugins/layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../css/personal/model.css">
+    <title>添加车辆</title>
+</head>
+
+<body>
+    <div class='addCar' ms-controller='root'>
+        <div class='title'> 添加车辆</div>
+        <div class='addForm'>
+            <ul class='formItem clearfix'>
+                <li>运输形式</li>
+                <li>:</li>
+                <li><input type="text" class='longInput'></li>
+            </ul>
+            <ul class='formItem clearfix'>
+                <li>所属公司</li>
+                <li>:</li>
+                <li><input type="text" class='longInput'></li>
+            </ul>
+            <ul class='formItem clearfix'>
+                <li>车辆品牌</li>
+                <li>:</li>
+                <li><input type="text" class='longInput'></li>
+            </ul>
+            <ul class='formItem clearfix'>
+                <li>上传行驶证</li>
+                <li>:</li>
+                <li class="upload">
+                    <img id="logo" src="../../images/addCar.png" width="95px" height="76px" alt="">
+                    <span class="uploadimg">
+                        <button type="button" class="layui-btn" id="test1">上传图片</button>
+                        <img class="img-responsive" src="../../images/upload.png" alt="">
+                    </span>
+                </li>
+                <!-- <li><img src="../../images/addCar.png" alt=""></li> -->
+            </ul>
+            <ul class='formItem clearfix'>
+                <li>车辆图片</li>
+                <li>:</li>
+                <li><img src="../../images/addCar.png" alt=""></li>
+                <div class='clearfix'></div>
+                <div class='tips font14 color-999'>上传图像，必须能清晰显示车辆牌照号码（图像规格：车头，两侧，车位）</div>
+            </ul>
+            <ul class='formItem clearfix'>
+                <li>手机号码</li>
+                <li>:</li>
+                <li>18586951457</li>
+                <li><button class='btn-gray'>获取验证码</button></li>
+            </ul>
+            <ul class='formItem clearfix'>
+                <li>验证码</li>
+                <li>:</li>
+                <li><input type="text" class='shortInput'></li>
+            </ul>
+        </div>
+        <ul class='btns clearfix'>
+            <li><button>申请添加</button></li>
+            <li><button ms-on-click='@cancelAdd'>取&emsp;消</button></li>
+        </ul>
+    </div>
+    <script src='../../plugins/jquery/jquery.min.js'></script>
+    <script src='../../plugins/layui/dist/layui.js'></script>
+    <script src='../../plugins/avalon/avalon.min.js'></script>
+    <script src='../../js/personal/addCar.js'></script>
+</body>
+
+</html>

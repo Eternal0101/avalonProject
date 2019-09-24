@@ -48,6 +48,7 @@
 .mr80{margin-right:80px;}
 .mr90{margin-right:90px;}
 /* 上边距 */
+.mt8{margin-top: 8px;}
 .mt10{margin-top:10px;}
 .mt19{margin-top:19px;}
 .mt20{margin-top:20px;}
@@ -75,12 +76,16 @@
 .pr60{padding-right:60px;}
 .pl0{padding-left:0px;}
 .pr0{padding-right:0px;}
+.pt8{padding-top: 8px;}
+.pt50{padding-top: 50px;}
+.pt30{padding-top: 18px;}
 /* 字体粗细 */
 .fontw {font-weight: bold;}
 /* 字体颜色 */
 .color-fff {color: #fff;}
 .color-000{color:#000;}
 .color-999{color:#999;}
+.bg-fff{background:#fff;}
 /* 宽度 */
 .w400{
     width:400px;
@@ -159,4 +164,10 @@ a:hover,a:link,a:visited{color:#333;text-decoration: none!important;}
 .row{
     margin-left:0px;
     margin-right:0px;
+}
+.color-orange{
+    color:#f57619;
+}
+.color-999{
+    color:#999;
 }

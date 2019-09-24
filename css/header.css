@@ -1,0 +1,75 @@
+header {
+  width: 100%;
+  height: 34x;
+  background-color: #f57619;
+}
+header .topBar {
+  height: 34px;
+  line-height: 34px;
+  background-color: #f57619;
+  color: #fff;
+  font-size: 14px;
+}
+header .topBar a:hover,
+header .topBar a:link,
+header .topBar a:visited {
+  color: #fff !important;
+}
+.layui-nav {
+  padding: 0px 20px 0px 0px;
+}
+.navBar {
+  width: 100%;
+  height: 106px;
+  box-shadow: 0 5px 10px -5px #d6d6d6;
+  line-height: 106px;
+}
+a:hover,
+a:link,
+a:visited {
+  color: #f57619 !important;
+}
+.layui-nav {
+  background-color: #fff;
+  color: #f57619 !important;
+}
+.layui-nav .layui-nav-item {
+  line-height: 106px;
+  margin-right: 18px;
+}
+.layui-nav .layui-nav-item:last-child {
+  margin-right: 0px;
+}
+.layui-this {
+  background-color: #f57619 !important;
+}
+.layui-this > a:hover,
+.layui-this a:link,
+.layui-this a:visited {
+  color: #fff !important;
+}
+.layui-nav .layui-this:after,
+.layui-nav-bar,
+.layui-nav-tree .layui-nav-itemed:after {
+  height: 0px;
+}
+.layui-nav * {
+  font-size: 18px;
+}
+.userMsg {
+  padding-left: 73px;
+}
+.userMsg ul li {
+  cursor: pointer;
+  float: left;
+}
+.userMsg ul li:not(:first-child) {
+  margin-left: 8px;
+}
+.fixHeader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="../../plugins/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../plugins/layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../css/orderDriver/orderDriver.css">
+    <title>订单管理</title>
+</head>
+
+<body>
+    <div class="order" ms-controller='root'>
+        <div class='content_box'>
+            <!-- 加盟广告 -->
+            <div class='ads'>
+                <img src="../../images/ads.png" width='100%' height='144px' alt="加盟广告">
+            </div>
+            <!-- 全部订单 -->
+            <div class='row orders'>
+                <div class='col-md-9 col-sm-9'>
+                    <ul class='tab clearfix'>
+                        <li class='active'>全部订单(12)<span></span></li>
+                        <li>待装货<span></span></li>
+                        <li>运输中(3)<span></span></li>
+                        <li>待收货<span></span></li>
+                        <li>申述/退款</li>
+                    </ul>
+                    <ul class='searchInput clearfix'>
+                        <li><input type="text" placeholder="请输入订单编号/目的地搜索"></li>
+                        <li><button>搜索</button></li>
+                    </ul>
+                    <div class='tabContent'>
+                        <div class='tabItem'>
+                            <div class='order-detail'>
+                                <div class='orderTitle clearfix'>
+                                    <ul class='pull-left clearfix'>
+                                        <li>订单编号<span>:</span></li>
+                                        <li>1451234564</li>
+                                    </ul>
+                                    <ul class='pull-right clearfix'>
+                                        <li>联系电话</li>
+                                        <li>货物运输中</li>
+                                    </ul>
+                                </div>
+                                <div class='row orderContent'>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <img src="../../images/fruit.png" alt="">
+                                    </div>
+                                    <div class='orderDes col-md-6 col-sm-6'>
+                                        <ul>
+                                            <li>
+                                                <span>成都</span>
+                                                <span>武侯区</span>
+                                                <span>→</span>
+                                                <span>绵阳</span>
+                                                <span>游仙</span>
+                                            </li>
+                                            <li>
+                                                <span>整车/</span>
+                                                <span>1.2米/</span>
+                                                <span>平板/</span>
+                                                <span>7吨/</span>
+                                                <span>50方</span>
+                                            </li>
+                                            <li>
+                                                <span>水果/</span>
+                                                <span>一装一卸</span>
+                                            </li>
+                                            <li>待付金额&nbsp;:&nbsp;<span>12321</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class='col-md-2 col-sm-2 code'>
+                                        <div class='codeContent'>
+                                            <div class='tri'>
+
+                                            </div>
+                                            <ul class='qrCode'>
+                                                <li><img src="../../images/qrCode.png" alt=""></li>
+                                                <li class='font12'>扫码拨号·刘先生</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <ul class='transport'>
+                                            <li><button class='btn-finish'>运输完成</button></li>
+                                            <li ms-on-click='@checkLine'>查看路线</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='order-detail'>
+                                <div class='orderTitle clearfix'>
+                                    <ul class='pull-left clearfix'>
+                                        <li>订单编号<span>:</span></li>
+                                        <li>1451234564</li>
+                                    </ul>
+                                    <ul class='pull-right clearfix'>
+                                        <li style='margin-right: 47px;'>联系电话</li>
+                                        <li>等待货主确认收货</li>
+                                    </ul>
+                                </div>
+                                <div class='row orderContent'>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <img src="../../images/fruit.png" alt="">
+                                    </div>
+                                    <div class='orderDes col-md-6 col-sm-6'>
+                                        <ul>
+                                            <li>
+                                                <span>成都</span>
+                                                <span>武侯区</span>
+                                                <span>→</span>
+                                                <span>绵阳</span>
+                                                <span>游仙</span>
+                                            </li>
+                                            <li>
+                                                <span>整车/</span>
+                                                <span>1.2米/</span>
+                                                <span>平板/</span>
+                                                <span>7吨/</span>
+                                                <span>50方</span>
+                                            </li>
+                                            <li>
+                                                <span>水果/</span>
+                                                <span>一装一卸</span>
+                                            </li>
+                                            <li>待付金额&nbsp;:&nbsp;<span>12321</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class='col-md-2 col-sm-2 code'>
+                                        <div class='codeContent'>
+                                            <div class='tri'>
+
+                                            </div>
+                                            <ul class='qrCode'>
+                                                <li><img src="../../images/qrCode.png" alt=""></li>
+                                                <li class='font12'>扫码拨号·刘先生</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <ul class='transport'>
+                                            <li style='text-align:center'>查看路线</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='order-detail'>
+                                <div class='orderTitle clearfix'>
+                                    <ul class='pull-left clearfix'>
+                                        <li>订单编号<span>:</span></li>
+                                        <li>1451234564</li>
+                                    </ul>
+                                </div>
+                                <div class='row orderContent'>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <img src="../../images/fruit.png" alt="">
+                                    </div>
+                                    <div class='orderDes col-md-8 col-sm-8'>
+                                        <ul>
+                                            <li>
+                                                <span>成都</span>
+                                                <span>武侯区</span>
+                                                <span>→</span>
+                                                <span>绵阳</span>
+                                                <span>游仙</span>
+                                            </li>
+                                            <li>
+                                                <span>整车/</span>
+                                                <span>1.2米/</span>
+                                                <span>平板/</span>
+                                                <span>7吨/</span>
+                                                <span>50方</span>
+                                            </li>
+                                            <li>
+                                                <span>水果/</span>
+                                                <span>一装一卸</span>
+                                            </li>
+                                            <li>待付金额&nbsp;:&nbsp;<span>12321</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <ul class='transport'>
+                                            <li><button class='btn-finish'>删除订单</button></li>
+                                            <li ms-on-click='@checkRate'>查看评价</li>
+                                            <li ms-on-click='@orderAppeal'>申诉</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='order-detail'>
+                                <div class='orderTitle clearfix'>
+                                    <ul class='pull-left clearfix'>
+                                        <li>订单编号<span>:</span></li>
+                                        <li>1451234564</li>
+                                    </ul>
+                                </div>
+                                <div class='row orderContent'>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <img src="../../images/fruit.png" alt="">
+                                    </div>
+                                    <div class='orderDes col-md-8 col-sm-8'>
+                                        <ul>
+                                            <li>
+                                                <span>成都</span>
+                                                <span>武侯区</span>
+                                                <span>→</span>
+                                                <span>绵阳</span>
+                                                <span>游仙</span>
+                                            </li>
+                                            <li>
+                                                <span>整车/</span>
+                                                <span>1.2米/</span>
+                                                <span>平板/</span>
+                                                <span>7吨/</span>
+                                                <span>50方</span>
+                                            </li>
+                                            <li>
+                                                <span>水果/</span>
+                                                <span>一装一卸</span>
+                                            </li>
+                                            <li>待付金额&nbsp;:&nbsp;<span>12321</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <ul class='transport'>
+                                            <li style='text-align: center'>申述中</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='order-detail'>
+                                <div class='orderTitle clearfix'>
+                                    <ul class='pull-left clearfix'>
+                                        <li>订单编号<span>:</span></li>
+                                        <li>1451234564</li>
+                                    </ul>
+                                </div>
+                                <div class='row orderContent'>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <img src="../../images/fruit.png" alt="">
+                                    </div>
+                                    <div class='orderDes col-md-8 col-sm-8'>
+                                        <ul>
+                                            <li>
+                                                <span>成都</span>
+                                                <span>武侯区</span>
+                                                <span>→</span>
+                                                <span>绵阳</span>
+                                                <span>游仙</span>
+                                            </li>
+                                            <li>
+                                                <span>整车/</span>
+                                                <span>1.2米/</span>
+                                                <span>平板/</span>
+                                                <span>7吨/</span>
+                                                <span>50方</span>
+                                            </li>
+                                            <li>
+                                                <span>水果/</span>
+                                                <span>一装一卸</span>
+                                            </li>
+                                            <li>待付金额&nbsp;:&nbsp;<span>12321</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <ul class='transport'>
+                                            <li style='text-align: center'>赔付中</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='order-detail'>
+                                <div class='orderTitle clearfix'>
+                                    <ul class='pull-left clearfix'>
+                                        <li>订单编号<span>:</span></li>
+                                        <li>1451234564</li>
+                                    </ul>
+                                </div>
+                                <div class='row orderContent'>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <img src="../../images/fruit.png" alt="">
+                                    </div>
+                                    <div class='orderDes col-md-8 col-sm-8'>
+                                        <ul>
+                                            <li>
+                                                <span>成都</span>
+                                                <span>武侯区</span>
+                                                <span>→</span>
+                                                <span>绵阳</span>
+                                                <span>游仙</span>
+                                            </li>
+                                            <li>
+                                                <span>整车/</span>
+                                                <span>1.2米/</span>
+                                                <span>平板/</span>
+                                                <span>7吨/</span>
+                                                <span>50方</span>
+                                            </li>
+                                            <li>
+                                                <span>水果/</span>
+                                                <span>一装一卸</span>
+                                            </li>
+                                            <li>待付金额&nbsp;:&nbsp;<span>12321</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class='col-md-2 col-sm-2'>
+                                        <ul class='transport'>
+                                            <li style='text-align: center' ms-on-click='@cancelOrder'>取消货单</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="demo2"></div>
+                        </div>
+                        <div class='tabItem dis_none'>待装货</div>
+                        <div class='tabItem dis_none'>运输中</div>
+                        <div class='tabItem dis_none'>待收货</div>
+                        <div class='tabItem dis_none'>申述/退款</div>
+                    </div>
+                </div>
+                <div class='col-md-3 col-sm-3'>
+                    <div class='countBox'>
+                        <div class='countTitle'>账户余额</div>
+                        <div class='countNumber'>
+                            <span>1222</span><span>￥</span></div>
+                        <button class='btn-apply'>申请提现</button>
+                    </div>
+                    <div class='countBox'>
+                        <div class='countTitle'>总完成订单量</div>
+                        <div class='countNumber'>
+                            <span>1222</span><span>辆</span>
+                        </div>
+                    </div>
+                    <div class='countBox'>
+                        <div class='countTitle'>信用分</div>
+                        <div class='countNumber'>
+                            <span>85</span><span>分</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='../../plugins/jquery/jquery.min.js'></script>
+    <script src='../../plugins/layui/dist/layui.js'></script>
+    <script src='../../plugins/avalon/avalon.min.js'></script>
+    <script src='../../js/order/orderDriver.js'></script>
+</body>
+
+</html>
