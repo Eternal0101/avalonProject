@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../css/personal/personal.css">
 </head>
 <body>
-    <div class='header'>
+    <div class='header' ms-controller='header'>
         <header>
             <!-- 版心 -->
             <div class='content_box'>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="col-md-9 col-sm-9 pl0">
                         <ul class="layui-nav">
-                            <li class="layui-nav-item" data-src='../../views/home.html'><a href="javascript:;">首页</a></li>
+                            <li class="layui-nav-item" data-src='../../index.html'><a href="javascript:;">首页</a></li>
                             <li class="layui-nav-item" data-src='../../views/carHall/carHall.html'><a href="javascript:;">汽车大厅</a></li>
                             <li class="layui-nav-item" data-src='../../views/financial/financial.html'><a href="javascript:;">金融服务</a></li>
                             <li class="layui-nav-item" data-src='../../views/orderDriver/orderDriver.html'><a href="javascript:;">订单管理</a></li>
@@ -229,66 +229,296 @@
                 </div>
                 <!-- 账户 -->
                 <div class='personalDetail personalAccount dis_none' ms-controller='personalAccount'>
-                    账户
+                    <div class='PanelTitle'>账户</div>
+                    <!-- 提现 -->
+                    <div class='withdraw'>
+                        <div class='font20 fontw'>可提现金额(元)</div>
+                        <div class='withdrawContent clearfix'>
+                            <ul class='pull-left'>
+                                <li>1222.00</li>
+                            </ul>
+                            <ul class='pull-right'>
+                                <li><button ms-on-click='@recharge'>充值</button></li>
+                                <li><button ms-on-click='@extract'>提现</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 提现记录 -->
+                    <div class='recordList'>
+                        <div class='recordTitle'>
+                            <div class='clearfix'>
+                                <div class='pull-left font18 fontw'>提现记录</div>
+                                <ul class='pull-right clearfix'>
+                                    <li>2019-06 至 2017-06</li>
+                                    <li>日历</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='countTime clearfix'>
+                            <ul class='clearfix'>
+                                <li>提现次数</li>
+                                <li>:</li>
+                                <li>25次</li>
+                            </ul>
+                            <ul class='clearfix'>
+                                <li>总提现金额</li>
+                                <li>:</li>
+                                <li>25632.00元</li>
+                            </ul>
+                        </div>
+                        <div class='recordItem'>
+                            <ul class='itemTitle clearfix'>
+                                <li>订单编号</li>
+                                <li>:</li>
+                                <li>14521234564</li>
+                            </ul>
+                            <div class='itemDetail clearfix'>
+                               <div class='pull-left'> 
+                                   <ul class='clearfix'>
+                                       <li>提现时间</li>
+                                       <li>:</li>
+                                       <li>2018-09-10</li>
+                                       <li class='ml40'>12:53</li>
+                                   </ul>
+                                   <ul class='clearfix'>
+                                       <li>提现账户</li>
+                                       <li>:</li>
+                                       <li>6321 **** **** **** 521</li>
+                                   </ul>
+                               </div>
+                               <div class='pull-right clearfix''>
+                                   <ul>
+                                       <li class='font20 fontw'>2000.00</li>
+                                       <li class='color-999'>提现金额(元)</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <div class='recordItem'>
+                            <ul class='itemTitle clearfix'>
+                                <li>订单编号</li>
+                                <li>:</li>
+                                <li>14521234564</li>
+                            </ul>
+                            <div class='itemDetail clearfix'>
+                               <div class='pull-left'> 
+                                   <ul class='clearfix'>
+                                       <li>提现时间</li>
+                                       <li>:</li>
+                                       <li>2018-09-10</li>
+                                       <li class='ml40'>12:53</li>
+                                   </ul>
+                                   <ul class='clearfix'>
+                                       <li>提现账户</li>
+                                       <li>:</li>
+                                       <li>6321 **** **** **** 521</li>
+                                   </ul>
+                               </div>
+                               <div class='pull-right clearfix''>
+                                   <ul>
+                                       <li class='font20 fontw'>2000.00</li>
+                                       <li class='color-999'>提现金额(元)</li>
+                                   </ul>
+                               </div>
+                            </div>
+                        </div>
+                        <div class='recordItem'>
+                            <ul class='itemTitle clearfix'>
+                                <li>订单编号</li>
+                                <li>:</li>
+                                <li>14521234564</li>
+                            </ul>
+                            <div class='itemDetail clearfix'>
+                                <div class='pull-left'>
+                                    <ul class='clearfix'>
+                                        <li>提现时间</li>
+                                        <li>:</li>
+                                        <li>2018-09-10</li>
+                                        <li class='ml40'>12:53</li>
+                                    </ul>
+                                    <ul class='clearfix'>
+                                        <li>提现账户</li>
+                                        <li>:</li>
+                                        <li>6321 **** **** **** 521</li>
+                                    </ul>
+                                </div>
+                                <div class='pull-right clearfix''>
+                                   <ul>
+                                       <li class=' font20 fontw'>2000.00</li>
+                                    <li class='color-999'>提现金额(元)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="demo2"></div>
+                    </div>
                 </div>
                 <!-- 银行卡 -->
                 <div class='personalDetail personalBankCard dis_none' ms-controller='personalBankCard'>
-                    银行卡
+                    <ul class='PanelTitle clearfix'>
+                        <li class='pull-left'>银行卡</li>
+                        <li class='pull-right'><button class='btn-add' ms-on-click='@addBankCard'>添加银行卡</button></li>
+                    </ul>
+                    <div class='bankCard clearfix'>
+                        <ul class='cardShow'>
+                            <li><img src="../../images/cardBlue.png" alt=""></li>
+                            <li class='clearfix'><span class='pull-left' ms-on-click='@setDefault'>设为默认</span><span class='pull-right' ms-on-click='@unbind'>解绑</span></li>
+                        </ul>
+                        <ul class='cardShow'>
+                            <li><img src="../../images/cardBlue.png" alt=""></li>
+                            <li class='clearfix'><span class='pull-left'>设为默认</span><span class='pull-right'>解绑</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- 代理商家 -->
                 <div class='personalDetail personalAgent dis_none' ms-controller='personalAgent'>
-                    代理商家
+                    <div class='PanelTitle'>代理商家</div>
+                    <div class='countContent clearfix'>
+                        <div class='countItem'>
+                            <div class='countTitle'>总订单数量(单)</div>
+                            <div class='countNumber'>1222</div>
+                        </div>
+                        <div class='countItem'>
+                            <div class='countTitle'>总订单金额(¥)</div>
+                            <div class='countNumber'>1222</div>
+                        </div>
+                        <div class='countItem'>
+                            <div class='countTitle'>可提现金额(¥)</div>
+                            <div class='countNumber'>1222</div>
+                            <div class='apply' ms-on-click='@applyMoney'>申请提现</div>
+                        </div>
+                    </div>
+                    <div class='agentList'>
+                        <div class='agentItem clearfix'>
+                            <div class='agentLogo pull-left'>
+                                <img src="../../images/companyInfo.png" width="99px"  height="70px" alt="">
+                            </div>
+                            <div class='agentMsg pull-left'>
+                                <div class='agentName'>成都鑫元通汽车销售有限公司</div>
+                                <ul class='clearfix'>
+                                    <li>总订单数量</li>
+                                    <li>:</li>
+                                    <li>2132</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li>总订单金额</li>
+                                    <li>:</li>
+                                    <li>21314.00</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li>公司地址</li>
+                                    <li>:</li>
+                                    <li>四川省成都市双流区会缘路会缘汽配城10栋</li>
+                                </ul>
+                            </div>
+                            <div class='agentContact pull-right'>
+                                <img src="../../images/phoneIcon.png" alt="">
+                                <span>0288-65266985</span>
+                            </div>
+                        </div>
+                        <div class='agentItem clearfix'>
+                            <div class='agentLogo pull-left'>
+                                <img src="../../images/companyInfo.png" width="99px" height="70px" alt="">
+                            </div>
+                            <div class='agentMsg pull-left'>
+                                <div class='agentName'>成都鑫元通汽车销售有限公司</div>
+                                <ul class='clearfix'>
+                                    <li>总订单数量</li>
+                                    <li>:</li>
+                                    <li>2132</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li>总订单金额</li>
+                                    <li>:</li>
+                                    <li>21314.00</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li>公司地址</li>
+                                    <li>:</li>
+                                    <li>四川省成都市双流区会缘路会缘汽配城10栋</li>
+                                </ul>
+                            </div>
+                            <div class='agentContact pull-right'>
+                                <img src="../../images/phoneIcon.png" alt="">
+                                <span>0288-65266985</span>
+                            </div>
+                        </div>
+                        <div class='agentItem clearfix'>
+                            <div class='agentLogo pull-left'>
+                                <img src="../../images/companyInfo.png" width="99px" height="70px" alt="">
+                            </div>
+                            <div class='agentMsg pull-left'>
+                                <div class='agentName'>成都鑫元通汽车销售有限公司</div>
+                                <ul class='clearfix'>
+                                    <li>总订单数量</li>
+                                    <li>:</li>
+                                    <li>2132</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li>总订单金额</li>
+                                    <li>:</li>
+                                    <li>21314.00</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li>公司地址</li>
+                                    <li>:</li>
+                                    <li>四川省成都市双流区会缘路会缘汽配城10栋</li>
+                                </ul>
+                            </div>
+                            <div class='agentContact pull-right'>
+                                <img src="../../images/phoneIcon.png" alt="">
+                                <span>0288-65266985</span>
+                            </div>
+                        </div>
+                        <div class='agentItem clearfix'>
+                            <div class='agentLogo pull-left'>
+                                <img src="../../images/companyInfo.png" width="99px" height="70px" alt="">
+                            </div>
+                            <div class='agentMsg pull-left'>
+                                <div class='agentName'>成都鑫元通汽车销售有限公司</div>
+                                <ul class='clearfix'>
+                                    <li>总订单数量</li>
+                                    <li>:</li>
+                                    <li>2132</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li>总订单金额</li>
+                                    <li>:</li>
+                                    <li>21314.00</li>
+                                </ul>
+                                <ul class='clearfix'>
+                                    <li>公司地址</li>
+                                    <li>:</li>
+                                    <li>四川省成都市双流区会缘路会缘汽配城10栋</li>
+                                </ul>
+                            </div>
+                            <div class='agentContact pull-right'>
+                                <img src="../../images/phoneIcon.png" alt="">
+                                <span>0288-65266985</span>
+                            </div>
+                        </div>
+                        <div id="demo3"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class='row'>
-            <div class='col-md-6 col-sm-6'>
-                <ul class="clearfix  footerBar">
-                    <li>关于我们</li>
-                    <li>法律声明</li>
-                    <li>意见反馈</li>
-                </ul>
-                <div class='permission font14'>
-                    <p>经营许可证编号<span class='ml8 mr8'>:</span>京ICP证080575号/京ICO备09080840号</p>
-                    <p class='mt30'>京公安网1101052035781号</p>
-                </div>
-            </div>
-            <div class='col-md-6 col-sm-6 clearfix qrCode'>
-                <ul class='pull-left'>
-                    <li><img src="../../images/qrCode.png" alt=""></li>
-                    <li>iPhone客户端</li>
-                </ul>
-                <ul class='pull-left ml80'>
-                    <li><img src="../../images/qrCode.png" alt=""></li>
-                    <li>Android客户端</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <script src='../../plugins/common/include.js'></script>
+    <include src='../../views/footer/footer.html'></include>
     <script src='../../plugins/jquery/jquery.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
     <script src='../../plugins/layui/dist/layui.all.js'></script>
     <script src='../../plugins/avalon/avalon.min.js'></script>
+    <script src='../../js/header.js'></script>
+    <script src='../../js/personal/personal.js'></script>
+    <!-- 车辆管理 -->
     <script src='../../js/personal/vehicleManagement.js'></script>
-    <script>
-        $('.layui-nav .layui-nav-item').on('click', function () {
-            var src = $(this).attr('data-src');
-            location.href = src;
-        });
-        $('.personalList li').click(function(){
-            $(this).addClass('active').siblings().removeClass('active');
-            $('.personalContent .personalDetail').eq($(this).index()).show().siblings().hide();
-        });
-        $(document).scroll(function(){   //页面加载时，获取滚动条初始高度
-            var distance = $(document).scrollTop();  //获取滚动条初始高度的值 ：0
-            if(distance >= 80){
-                $('.header').addClass('fixHeader');
-            }else{
-                $('.header').removeClass('fixHeader');
-            }
-        });
-    </script>
+    <!-- 账户 -->
+    <script src='../../js/personal/personalAccount.js'></script>
+    <!-- 银行 -->
+    <script src='../../js/personal/personalBankCard.js'></script>
+    <!-- 代理商家 -->
+    <script src='../../js/personal/personalAgent.js'></script>
 </body>
  

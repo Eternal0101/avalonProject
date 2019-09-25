@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="../../plugins/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../plugins/layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../css/personal/model.css">
+    <title>银行卡解绑</title>
+</head>
+
+<body>
+    <div ms-controller='root'>
+        <div class='title'>解绑银行卡</div>
+         <div class='addForm unbind'>
+            <ul class='formItem clearfix'>
+                <li>银行名称</li>
+                <li>:</li>
+                <li>中国建设银行</li>
+            </ul>
+            <ul class='formItem clearfix'>
+                <li>解绑卡号</li>
+                <li>:</li>
+                <li>4521 **** **** **** 621</li>
+            </ul>
+            <ul class='formItem clearfix'>
+                <li>手机号码</li>
+                <li>:</li>
+                <li>18586951457</li>
+                <li><button class='btn-gray' ms-on-click='@getCheckCode'>获取验证码</button></li>
+            </ul>
+            <ul class='formItem clearfix'>
+                <li>验证码</li>
+                <li>:</li>
+                <li><input type="text" class='shortInput'></li>
+            </ul>
+        </div>
+        <ul class='btns clearfix'>
+            <li><button>确认解绑</button></li>
+            <li><button ms-on-click='@cancel'>取&emsp;消</button></li>
+        </ul>
+    </div>
+    <script src='../../plugins/jquery/jquery.min.js'></script>
+    <script src='../../plugins/layui/dist/layui.js'></script>
+    <script src='../../plugins/avalon/avalon.min.js'></script>
+    <script src='../../js/personal/bankCardUnbind.js'></script>
+</body>
+</html>

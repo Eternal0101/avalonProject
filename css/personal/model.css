@@ -2,7 +2,7 @@
   height: 57px;
   line-height: 57px;
   padding-left: 28px;
-  border: solid 1px #999999;
+  border-bottom: solid 1px #999999;
   font-size: 18px;
   font-weight: bold;
 }
@@ -85,6 +85,7 @@
   display: inline-block;
   width: 95px;
   height: 76px;
+  display: none;
 }
 .uploadimg img {
   margin-left: 30px;
@@ -97,4 +98,41 @@
   margin-top: 10px;
   height: 54px;
   line-height: 54px;
+}
+.checking {
+  margin-top: 38px;
+}
+.checking p {
+  margin-top: 40px;
+}
+.recharge .formItem {
+  margin-top: 25px;
+}
+.recharge .btns {
+  margin-top: 60px;
+}
+.extract .tips {
+  margin-top: 18px;
+  margin-left: 134px;
+}
+.addBankCard .tips {
+  margin-left: 58px;
+}
+.setDefault {
+  padding: 51px 0px 0px 74px;
+}
+.setDefault ul:first-child li {
+  float: left;
+}
+.setDefault ul:first-child li:nth-child(2) {
+  margin-left: 8px;
+}
+.setDefault ul:nth-child(2) {
+  margin-top: 32px;
+}
+.setDefault ul:nth-child(2) li:last-child {
+  margin-top: 32px;
+}
+.unbind .formItem {
+  margin-top: 36px;
 }

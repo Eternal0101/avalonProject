@@ -247,3 +247,26 @@
 .table {
   margin-bottom: 0px;
 }
+.search {
+  width: 326px;
+  height: 46px;
+  line-height: 46px;
+  padding-left: 10px;
+  border: 0px;
+  border: 1px solid #999;
+  outline: none;
+  vertical-align: middle;
+  border-right: 0px;
+}
+.btn-search {
+  width: 96px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: #ea6f15;
+  border: 0px;
+  border: 1px solid #ea6f15;
+  outline: none;
+  vertical-align: middle;
+  color: #fff;
+}

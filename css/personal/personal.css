@@ -201,3 +201,246 @@ footer {
   color: #f57619;
   cursor: pointer;
 }
+.withdraw {
+  background-color: #fffaf6;
+  margin-top: 41px;
+}
+.withdraw > div:first-child {
+  padding-top: 29px;
+  padding-left: 36px;
+}
+.withdraw button {
+  width: 93px;
+  height: 39px;
+  background-color: #f57619;
+  line-height: 39px;
+  text-align: center;
+  border: 0px;
+  border: 1px solid #f57619;
+  color: #fff;
+}
+.withdrawContent ul:first-child {
+  padding-left: 40px;
+  font-size: 56px;
+  font-weight: bold;
+  padding-top: 46px;
+}
+.withdrawContent ul:nth-child(2) {
+  margin-right: 52px;
+  padding-bottom: 25px;
+}
+.withdrawContent ul:nth-child(2) li {
+  margin-top: 19px;
+}
+.withdrawContent ul:nth-child(2) li:nth-child(2) {
+  margin-top: 27px;
+}
+.recordList {
+  margin-top: 62px;
+  background-color: #fffaf6;
+}
+.recordTitle {
+  padding-left: 13px;
+  height: 46px;
+  line-height: 46px;
+}
+.recordTitle > div {
+  padding-left: 24px;
+  border-bottom: solid 1px #999999;
+}
+.recordTitle ul {
+  padding-right: 24px;
+}
+.recordTitle ul li {
+  float: left;
+  margin-left: 10px;
+}
+.countTime {
+  padding: 32px 0px 0px 31px;
+}
+.countTime ul {
+  float: left;
+}
+.countTime ul li {
+  float: left;
+}
+.countTime ul li:nth-child(2) {
+  margin: 0px 8px;
+}
+.countTime ul:nth-child(2) {
+  margin-left: 70px;
+}
+.itemTitle {
+  background-color: #f57619;
+  color: #fff;
+  height: 39px;
+  line-height: 39px;
+  padding-left: 18px;
+}
+.itemTitle li {
+  float: left;
+}
+.itemTitle li:nth-child(2) {
+  margin: 0 8px;
+}
+.recordItem {
+  margin-top: 28px;
+  background-color: #fff;
+  width: 772px;
+  margin-left: 29px;
+}
+.itemDetail {
+  padding: 40px 0px 46px 51px;
+}
+.itemDetail > div:first-child ul li {
+  float: left;
+}
+.itemDetail > div:first-child ul li:nth-child(2) {
+  margin: 0 8px;
+}
+.itemDetail > div:first-child ul:nth-child(2) {
+  margin-top: 27px;
+}
+.itemDetail > div:nth-child(2) {
+  padding-right: 23px;
+}
+.itemDetail > div:nth-child(2) li:nth-child(2) {
+  margin-top: 27px;
+}
+.layui-laypage a,
+.layui-laypage span {
+  font-size: 16px;
+  height: 34px;
+  line-height: 34px;
+  margin: 0 -1px 5px 18px;
+}
+#demo2 {
+  padding: 53px 0px 10px 106px;
+}
+#demo3 {
+  padding: 35px 0px 10px 106px;
+}
+.bankCard {
+  margin-top: 41px;
+  height: 802px;
+  background-color: #fffaf6;
+  padding-top: 41px;
+}
+.bankCard .cardShow {
+  width: 188px;
+  height: 111px;
+  background-color: #003a92;
+  margin-left: 40px;
+  float: left;
+}
+.bankCard .cardShow li:nth-child(2) {
+  height: 26px;
+  line-height: 26px;
+  padding-left: 18px;
+  padding-right: 20px;
+  font-size: 12px;
+  color: #fff;
+  border-top: 1px solid #fff;
+}
+.bankCard .cardShow li:nth-child(2) span {
+  cursor: pointer;
+}
+.countContent {
+  margin-top: 41px;
+}
+.countItem {
+  width: 245px;
+  height: 200px;
+  background-color: #fffaf6;
+  float: left;
+  position: relative;
+}
+.countItem:not(:first-child) {
+  margin-left: 47px;
+}
+.countItem .countTitle {
+  padding-top: 19px;
+  padding-left: 18px;
+}
+.countItem .countNumber {
+  width: 124px;
+  height: 124px;
+  border: solid 1px #f57619;
+  background-color: #ffffff;
+  border-radius: 124px;
+  line-height: 124px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #f57619;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+.countItem:nth-child(3) .countNumber {
+  width: 112px;
+  height: 112px;
+  border: solid 1px #f57619;
+  background-color: #ffffff;
+  border-radius: 112px;
+  line-height: 112px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #f57619;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+.apply {
+  border-top: 1px solid #eaeaea;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  width: 100%;
+  cursor: pointer;
+}
+.agentList {
+  height: 861px;
+  background-color: #fffaf6;
+  margin-top: 61px;
+  padding-top: 8px;
+}
+.agentItem {
+  width: 772px;
+  height: 164px;
+  background-color: #ffffff;
+  border: solid 1px #eaeaea;
+  padding: 20px 10px 28px 38px;
+  margin-left: 30px;
+  margin-top: 23px;
+}
+.agentMsg {
+  margin-left: 28px;
+}
+.agentMsg ul {
+  line-height: 30px;
+}
+.agentMsg ul li {
+  float: left;
+}
+.agentMsg ul li:nth-child(2) {
+  margin: 0 8px;
+}
+.agentContact img {
+  vertical-align: middle;
+}
+.agentName {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}

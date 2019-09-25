@@ -41,7 +41,7 @@ $(function(){
             },
             getPage:function(el){
                 var src = el.currentTarget.dataset.src;
-                window.parent.document.getElementById('test').src = src;
+                location.href = src;
             }
         });
         vmCarHall.onLoad();

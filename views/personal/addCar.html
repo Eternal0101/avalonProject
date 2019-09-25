@@ -45,7 +45,13 @@
             <ul class='formItem clearfix'>
                 <li>车辆图片</li>
                 <li>:</li>
-                <li><img src="../../images/addCar.png" alt=""></li>
+                <li class="upload">
+                    <img id="logo" src="../../images/addCar.png" width="95px" height="76px" alt="">
+                    <span class="uploadimg">
+                        <button type="button" class="layui-btn" id="test2">上传图片</button>
+                        <img class="img-responsive" src="../../images/upload.png" alt="">
+                    </span>
+                </li>
                 <div class='clearfix'></div>
                 <div class='tips font14 color-999'>上传图像，必须能清晰显示车辆牌照号码（图像规格：车头，两侧，车位）</div>
             </ul>
@@ -53,7 +59,7 @@
                 <li>手机号码</li>
                 <li>:</li>
                 <li>18586951457</li>
-                <li><button class='btn-gray'>获取验证码</button></li>
+                <li><button class='btn-gray' ms-on-click='@getCheckCode'>获取验证码</button></li>
             </ul>
             <ul class='formItem clearfix'>
                 <li>验证码</li>
@@ -62,7 +68,7 @@
             </ul>
         </div>
         <ul class='btns clearfix'>
-            <li><button>申请添加</button></li>
+            <li><button ms-on-click='@addCar'>申请添加</button></li>
             <li><button ms-on-click='@cancelAdd'>取&emsp;消</button></li>
         </ul>
     </div>
@@ -71,5 +77,4 @@
     <script src='../../plugins/avalon/avalon.min.js'></script>
     <script src='../../js/personal/addCar.js'></script>
 </body>
-
 </html>

@@ -2,7 +2,7 @@
     height: 57px;
     line-height: 57px;
     padding-left: 28px;
-    border: solid 1px #999999;
+    border-bottom: solid 1px #999999;
     font-size: 18px;
     font-weight: bold;
 }
@@ -86,7 +86,7 @@
     display: inline-block;
     width: 95px;
     height:76px;
-    // display: none;
+    display: none;
 }
 
 .uploadimg img {
@@ -100,4 +100,63 @@
     margin-top: 10px;
     height: 54px;
     line-height: 54px;
+}
+// 车辆审核
+.checking{
+    margin-top: 38px;
+    p{
+        margin-top: 40px;
+    }
+}
+// 充值
+.recharge {
+    .formItem{
+        margin-top: 25px;
+    }
+    .btns{
+        margin-top: 60px;
+    }
+}
+// 提现
+.extract{
+    .tips{
+        margin-top: 18px;
+        margin-left: 134px;
+    }
+}
+// 添加银行卡
+.addBankCard{
+    .tips{
+        margin-left: 58px;
+    }
+}
+// 将银行卡设为默认
+.setDefault {
+    padding:51px 0px 0px 74px;
+    ul {
+        &:first-child {
+            li {
+                float: left;
+
+                &:nth-child(2) {
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            margin-top: 32px;
+            li {
+                &:last-child {
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
+}
+// 解绑银行卡
+.unbind{
+    .formItem{
+        margin-top: 36px;
+    }
 }
